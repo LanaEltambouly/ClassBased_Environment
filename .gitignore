@@ -2,8 +2,9 @@
 work/
 
 # Simulator Log & Waveform Output Files
-transcript
 *.wlf
+wlft*
+vsim.wlf
 
 # QuestaSim / ModelSim Project & Cache Files
 *.qdb

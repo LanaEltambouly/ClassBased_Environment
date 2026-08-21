@@ -1,5 +1,5 @@
 vlib work
-vlog -sv package.sv Interface.sv Memory_DUT.sv top.sv
+vlog -sv tb/package.sv tb/Interface.sv RTL/Memory_DUT.sv tb/top.sv
 vsim -c -voptargs=+acc top
 add wave *
 run -all
