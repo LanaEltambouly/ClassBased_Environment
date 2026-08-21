@@ -1,0 +1,12 @@
+# QuestaSim / ModelSim Compiled Library Directory
+work/
+
+# Simulator Log & Waveform Output Files
+transcript
+*.wlf
+
+# QuestaSim / ModelSim Project & Cache Files
+*.qdb
+*.qpg
+*.qtl
+*.lock
