@@ -2,7 +2,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 08:21:34 on Aug 22,2026
+# Start time: 11:30:01 on Aug 22,2026
 # vlog -sv tb/package.sv tb/Interface.sv RTL/Memory_DUT.sv tb/top.sv 
 # -- Compiling package pckg
 # -- Compiling package Interface_sv_unit
@@ -15,10 +15,10 @@
 # 
 # Top level modules:
 # 	top
-# End time: 08:21:34 on Aug 22,2026, Elapsed time: 0:00:00
+# End time: 11:30:01 on Aug 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -voptargs="+acc" top 
-# Start time: 08:21:34 on Aug 22,2026
+# Start time: 11:30:01 on Aug 22,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
@@ -43,11 +43,6 @@
 # Loading work.intf(fast__2)
 # Loading work.Memory_DUT_sv_unit(fast)
 # Loading work.mem_16x32(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Lana  Hostname: DESKTOP-J4HFHCB  ProcessID: 9796
-#           Attempting to use alternate WLF file "./wlftyfqsve".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyfqsve
 # [TX ID:1] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
 # [TX ID:2] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
 # [TX ID:3] EN=1 ADDR=0xf DIN=0x7b61 DOUT=0xx VALID=x
@@ -496,7 +491,7 @@
 # Driver
 # Monitor
 # ** Warning: [35] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
-#    Time: 35 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 46
+#    Time: 35 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 44
 # [35] [SCB WRITE] Addr=0xf <= Data=0x7b61
 # Driver
 # Monitor
@@ -2025,5 +2020,5 @@
 # ==================================================
 # ** Note: $finish    : tb/top.sv(41)
 #    Time: 4385 ns  Iteration: 2  Instance: /top
-# End time: 08:21:44 on Aug 22,2026, Elapsed time: 0:00:10
-# Errors: 0, Warnings: 3
+# End time: 11:30:10 on Aug 22,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 1

@@ -24,7 +24,6 @@ class scoreboard;
       continue; 
     end
 
-    // 1. Process output of PREVIOUS read request (1-cycle read latency)
     if (reads.size() > 0) begin
       prv_tx = reads.pop_front();
   
@@ -42,20 +41,18 @@ class scoreboard;
                    $time, prv_tx.address, ref_mem[prv_tx.address], tx.data_out);
         end
       end else begin
-        // Unwritten address read warning (does not increment error_count)
         $warning("[%0t] [SCB WARN] Read from unwritten address 0x%0h | Act=0x%0h", 
                  $time, prv_tx.address, tx.data_out);
       end
     end 
 
-    // 2. Process CURRENT transaction driven on interface
     if (tx.enable) begin
-      // Write transaction: Update reference memory
+      // Write 
       ref_mem[tx.address] = tx.data_in;
       $display("[%0t] [SCB WRITE] Addr=0x%0h <= Data=0x%0h", $time, tx.address, tx.data_in);
       pass_count++;
     end else begin
-      // Read transaction: Queue for evaluation in next cycle
+      // Read 
       reads.push_back(tx);
       $display("[%0t] [SCB READ REQ] Addr=0x%0h Queued", $time, tx.address);
     end     

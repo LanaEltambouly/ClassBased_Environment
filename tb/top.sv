@@ -19,7 +19,7 @@ module top;
   sweep_seq swp_seq;
 
   initial begin
-    env = new(intr);
+    env = new(intr); //virtual interface points to our concrete one
     env.run();
 
     rst_seq = new(env.seq);
