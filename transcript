@@ -2,7 +2,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 23:44:27 on Aug 22,2026
+# Start time: 23:55:07 on Aug 22,2026
 # vlog -sv "+cover" tb/package.sv tb/Interface.sv RTL/Memory_DUT.sv tb/top.sv 
 # -- Compiling package pckg
 # -- Compiling package Interface_sv_unit
@@ -15,11 +15,11 @@
 # 
 # Top level modules:
 # 	top
-# End time: 23:44:27 on Aug 22,2026, Elapsed time: 0:00:00
+# End time: 23:55:07 on Aug 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -voptargs="+acc" -coverage top 
-# Start time: 23:44:28 on Aug 22,2026
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 23:55:07 on Aug 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
 # //
@@ -486,1434 +486,1238 @@
 # Driver
 # Driver
 # Monitor
+# ** Warning: [5] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
+#    Time: 5 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
 # Driver
 # Monitor
+# ** Warning: [15] [SCB WARN] Read from unwritten address 0x0 | Act=0x0
+#    Time: 15 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
 # Driver
 # Monitor
-# [25] [SCB READ REQ] Addr=0x0 Queued
+# ** Warning: [25] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
+#    Time: 25 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
 # Driver
 # Monitor
+# ** Warning: [35] [SCB WARN] Read from unwritten address 0x0 | Act=0x0
+#    Time: 35 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
 # Driver
 # Monitor
-# [45] [SCB READ REQ] Addr=0x0 Queued
+# ** Warning: [45] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
+#    Time: 45 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
 # Driver
 # Monitor
-# ** Warning: [55] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
-#    Time: 55 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 44
 # [55] [SCB WRITE] Addr=0x3 <= Data=0x43d4
 # Driver
 # Monitor
-# [65] [SCB READ REQ] Addr=0x3 Queued
+# [65] [SCB PASS] Addr=0x3 | Exp=0x43d4 | Act=0x43d4
 # Driver
 # Monitor
-# [75] [SCB PASS] Addr=0x3 | Exp=0x43d4 | Act=0x43d4
 # [75] [SCB WRITE] Addr=0x5 <= Data=0x2daa
 # Driver
 # Monitor
-# [85] [SCB READ REQ] Addr=0x5 Queued
+# [85] [SCB PASS] Addr=0x5 | Exp=0x2daa | Act=0x2daa
 # Driver
 # Monitor
-# [95] [SCB PASS] Addr=0x5 | Exp=0x2daa | Act=0x2daa
 # [95] [SCB WRITE] Addr=0x2 <= Data=0xaaec
 # Driver
 # Monitor
-# [105] [SCB READ REQ] Addr=0x2 Queued
+# [105] [SCB PASS] Addr=0x2 | Exp=0xaaec | Act=0xaaec
 # Driver
 # Monitor
-# [115] [SCB PASS] Addr=0x2 | Exp=0xaaec | Act=0xaaec
 # [115] [SCB WRITE] Addr=0x9 <= Data=0x374f
 # Driver
 # Monitor
-# [125] [SCB READ REQ] Addr=0x9 Queued
+# [125] [SCB PASS] Addr=0x9 | Exp=0x374f | Act=0x374f
 # Driver
 # Monitor
-# [135] [SCB PASS] Addr=0x9 | Exp=0x374f | Act=0x374f
 # [135] [SCB WRITE] Addr=0xb <= Data=0xb909
 # Driver
 # Monitor
-# [145] [SCB READ REQ] Addr=0xb Queued
+# [145] [SCB PASS] Addr=0xb | Exp=0xb909 | Act=0xb909
 # Driver
 # Monitor
-# [155] [SCB PASS] Addr=0xb | Exp=0xb909 | Act=0xb909
 # [155] [SCB WRITE] Addr=0x5 <= Data=0xcd31
 # Driver
 # Monitor
-# [165] [SCB READ REQ] Addr=0x5 Queued
+# [165] [SCB PASS] Addr=0x5 | Exp=0xcd31 | Act=0xcd31
 # Driver
 # Monitor
-# [175] [SCB PASS] Addr=0x5 | Exp=0xcd31 | Act=0xcd31
 # [175] [SCB WRITE] Addr=0x0 <= Data=0x32c0
 # Driver
 # Monitor
-# [185] [SCB READ REQ] Addr=0x0 Queued
+# [185] [SCB PASS] Addr=0x0 | Exp=0x32c0 | Act=0x32c0
 # Driver
 # Monitor
-# [195] [SCB PASS] Addr=0x0 | Exp=0x32c0 | Act=0x32c0
 # [195] [SCB WRITE] Addr=0xd <= Data=0xc128
 # Driver
 # Monitor
-# [205] [SCB READ REQ] Addr=0xd Queued
+# [205] [SCB PASS] Addr=0xd | Exp=0xc128 | Act=0xc128
 # Driver
 # Monitor
-# [215] [SCB PASS] Addr=0xd | Exp=0xc128 | Act=0xc128
 # [215] [SCB WRITE] Addr=0xf <= Data=0x3af3
 # Driver
 # Monitor
-# [225] [SCB READ REQ] Addr=0xf Queued
+# [225] [SCB PASS] Addr=0xf | Exp=0x3af3 | Act=0x3af3
 # Driver
 # Monitor
-# [235] [SCB PASS] Addr=0xf | Exp=0x3af3 | Act=0x3af3
 # [235] [SCB WRITE] Addr=0x3 <= Data=0xcf9a
 # Driver
 # Monitor
-# [245] [SCB READ REQ] Addr=0x3 Queued
+# [245] [SCB PASS] Addr=0x3 | Exp=0xcf9a | Act=0xcf9a
 # Driver
 # Monitor
-# [255] [SCB PASS] Addr=0x3 | Exp=0xcf9a | Act=0xcf9a
 # [255] [SCB WRITE] Addr=0xe <= Data=0xee66
 # Driver
 # Monitor
-# [265] [SCB READ REQ] Addr=0xe Queued
+# [265] [SCB PASS] Addr=0xe | Exp=0xee66 | Act=0xee66
 # Driver
 # Monitor
-# [275] [SCB PASS] Addr=0xe | Exp=0xee66 | Act=0xee66
 # [275] [SCB WRITE] Addr=0xb <= Data=0xdfc7
 # Driver
 # Monitor
-# [285] [SCB READ REQ] Addr=0xb Queued
+# [285] [SCB PASS] Addr=0xb | Exp=0xdfc7 | Act=0xdfc7
 # Driver
 # Monitor
-# [295] [SCB PASS] Addr=0xb | Exp=0xdfc7 | Act=0xdfc7
 # [295] [SCB WRITE] Addr=0x1 <= Data=0xf014
 # Driver
 # Monitor
-# [305] [SCB READ REQ] Addr=0x1 Queued
+# [305] [SCB PASS] Addr=0x1 | Exp=0xf014 | Act=0xf014
 # Driver
 # Monitor
-# [315] [SCB PASS] Addr=0x1 | Exp=0xf014 | Act=0xf014
 # [315] [SCB WRITE] Addr=0xd <= Data=0x3619
 # Driver
 # Monitor
-# [325] [SCB READ REQ] Addr=0xd Queued
+# [325] [SCB PASS] Addr=0xd | Exp=0x3619 | Act=0x3619
 # Driver
 # Monitor
-# [335] [SCB PASS] Addr=0xd | Exp=0x3619 | Act=0x3619
 # [335] [SCB WRITE] Addr=0xf <= Data=0x9756
 # Driver
 # Monitor
-# [345] [SCB READ REQ] Addr=0xf Queued
+# [345] [SCB PASS] Addr=0xf | Exp=0x9756 | Act=0x9756
 # Driver
 # Monitor
-# [355] [SCB PASS] Addr=0xf | Exp=0x9756 | Act=0x9756
 # [355] [SCB WRITE] Addr=0xb <= Data=0x1118
 # Driver
 # Monitor
-# [365] [SCB READ REQ] Addr=0xb Queued
+# [365] [SCB PASS] Addr=0xb | Exp=0x1118 | Act=0x1118
 # Driver
 # Monitor
-# [375] [SCB PASS] Addr=0xb | Exp=0x1118 | Act=0x1118
 # [375] [SCB WRITE] Addr=0x8 <= Data=0xcf22
 # Driver
 # Monitor
-# [385] [SCB READ REQ] Addr=0x8 Queued
+# [385] [SCB PASS] Addr=0x8 | Exp=0xcf22 | Act=0xcf22
 # Driver
 # Monitor
-# [395] [SCB PASS] Addr=0x8 | Exp=0xcf22 | Act=0xcf22
 # [395] [SCB WRITE] Addr=0x3 <= Data=0x7584
 # Driver
 # Monitor
-# [405] [SCB READ REQ] Addr=0x3 Queued
+# [405] [SCB PASS] Addr=0x3 | Exp=0x7584 | Act=0x7584
 # Driver
 # Monitor
-# [415] [SCB PASS] Addr=0x3 | Exp=0x7584 | Act=0x7584
 # [415] [SCB WRITE] Addr=0x6 <= Data=0x1ccb
 # Driver
 # Monitor
-# [425] [SCB READ REQ] Addr=0x6 Queued
+# [425] [SCB PASS] Addr=0x6 | Exp=0x1ccb | Act=0x1ccb
 # Driver
 # Monitor
-# [435] [SCB PASS] Addr=0x6 | Exp=0x1ccb | Act=0x1ccb
 # [435] [SCB WRITE] Addr=0x3 <= Data=0xcfeb
 # Driver
 # Monitor
-# [445] [SCB READ REQ] Addr=0x3 Queued
+# [445] [SCB PASS] Addr=0x3 | Exp=0xcfeb | Act=0xcfeb
 # Driver
 # Monitor
-# [455] [SCB PASS] Addr=0x3 | Exp=0xcfeb | Act=0xcfeb
 # [455] [SCB WRITE] Addr=0x6 <= Data=0x9025
 # Driver
 # Monitor
-# [465] [SCB READ REQ] Addr=0x6 Queued
+# [465] [SCB PASS] Addr=0x6 | Exp=0x9025 | Act=0x9025
 # Driver
 # Monitor
-# [475] [SCB PASS] Addr=0x6 | Exp=0x9025 | Act=0x9025
 # [475] [SCB WRITE] Addr=0x0 <= Data=0xd030
 # Driver
 # Monitor
-# [485] [SCB READ REQ] Addr=0x0 Queued
+# [485] [SCB PASS] Addr=0x0 | Exp=0xd030 | Act=0xd030
 # Driver
 # Monitor
-# [495] [SCB PASS] Addr=0x0 | Exp=0xd030 | Act=0xd030
 # [495] [SCB WRITE] Addr=0x1 <= Data=0xc04d
 # Driver
 # Monitor
-# [505] [SCB READ REQ] Addr=0x1 Queued
+# [505] [SCB PASS] Addr=0x1 | Exp=0xc04d | Act=0xc04d
 # Driver
 # Monitor
-# [515] [SCB PASS] Addr=0x1 | Exp=0xc04d | Act=0xc04d
 # [515] [SCB WRITE] Addr=0x9 <= Data=0xd1d3
 # Driver
 # Monitor
-# [525] [SCB READ REQ] Addr=0x9 Queued
+# [525] [SCB PASS] Addr=0x9 | Exp=0xd1d3 | Act=0xd1d3
 # Driver
 # Monitor
-# [535] [SCB PASS] Addr=0x9 | Exp=0xd1d3 | Act=0xd1d3
 # [535] [SCB WRITE] Addr=0x4 <= Data=0x4186
 # Driver
 # Monitor
-# [545] [SCB READ REQ] Addr=0x4 Queued
+# [545] [SCB PASS] Addr=0x4 | Exp=0x4186 | Act=0x4186
 # Driver
 # Monitor
-# [555] [SCB PASS] Addr=0x4 | Exp=0x4186 | Act=0x4186
 # [555] [SCB WRITE] Addr=0xf <= Data=0x620
 # Driver
 # Monitor
-# [565] [SCB READ REQ] Addr=0xf Queued
+# [565] [SCB PASS] Addr=0xf | Exp=0x620 | Act=0x620
 # Driver
 # Monitor
-# [575] [SCB PASS] Addr=0xf | Exp=0x620 | Act=0x620
 # [575] [SCB WRITE] Addr=0xa <= Data=0x102a
 # Driver
 # Monitor
-# [585] [SCB READ REQ] Addr=0xa Queued
+# [585] [SCB PASS] Addr=0xa | Exp=0x102a | Act=0x102a
 # Driver
 # Monitor
-# [595] [SCB PASS] Addr=0xa | Exp=0x102a | Act=0x102a
 # [595] [SCB WRITE] Addr=0x6 <= Data=0xe362
 # Driver
 # Monitor
-# [605] [SCB READ REQ] Addr=0x6 Queued
+# [605] [SCB PASS] Addr=0x6 | Exp=0xe362 | Act=0xe362
 # Driver
 # Monitor
-# [615] [SCB PASS] Addr=0x6 | Exp=0xe362 | Act=0xe362
 # [615] [SCB WRITE] Addr=0x2 <= Data=0xe8ca
 # Driver
 # Monitor
-# [625] [SCB READ REQ] Addr=0x2 Queued
+# [625] [SCB PASS] Addr=0x2 | Exp=0xe8ca | Act=0xe8ca
 # Driver
 # Monitor
-# [635] [SCB PASS] Addr=0x2 | Exp=0xe8ca | Act=0xe8ca
 # [635] [SCB WRITE] Addr=0x1 <= Data=0x1574
 # Driver
 # Monitor
-# [645] [SCB READ REQ] Addr=0x1 Queued
+# [645] [SCB PASS] Addr=0x1 | Exp=0x1574 | Act=0x1574
 # Driver
 # Monitor
-# [655] [SCB PASS] Addr=0x1 | Exp=0x1574 | Act=0x1574
 # [655] [SCB WRITE] Addr=0x0 <= Data=0x1208
 # Driver
 # Monitor
-# [665] [SCB READ REQ] Addr=0x0 Queued
+# [665] [SCB PASS] Addr=0x0 | Exp=0x1208 | Act=0x1208
 # Driver
 # Monitor
-# [675] [SCB PASS] Addr=0x0 | Exp=0x1208 | Act=0x1208
 # [675] [SCB WRITE] Addr=0xd <= Data=0xdf83
 # Driver
 # Monitor
-# [685] [SCB READ REQ] Addr=0xd Queued
+# [685] [SCB PASS] Addr=0xd | Exp=0xdf83 | Act=0xdf83
 # Driver
 # Monitor
-# [695] [SCB PASS] Addr=0xd | Exp=0xdf83 | Act=0xdf83
 # [695] [SCB WRITE] Addr=0xd <= Data=0x2b9d
 # Driver
 # Monitor
-# [705] [SCB READ REQ] Addr=0xd Queued
+# [705] [SCB PASS] Addr=0xd | Exp=0x2b9d | Act=0x2b9d
 # Driver
 # Monitor
-# [715] [SCB PASS] Addr=0xd | Exp=0x2b9d | Act=0x2b9d
 # [715] [SCB WRITE] Addr=0x0 <= Data=0xb50
 # Driver
 # Monitor
-# [725] [SCB READ REQ] Addr=0x0 Queued
+# [725] [SCB PASS] Addr=0x0 | Exp=0xb50 | Act=0xb50
 # Driver
 # Monitor
-# [735] [SCB PASS] Addr=0x0 | Exp=0xb50 | Act=0xb50
 # [735] [SCB WRITE] Addr=0x0 <= Data=0x3f68
 # Driver
 # Monitor
-# [745] [SCB READ REQ] Addr=0x0 Queued
+# [745] [SCB PASS] Addr=0x0 | Exp=0x3f68 | Act=0x3f68
 # Driver
 # Monitor
-# [755] [SCB PASS] Addr=0x0 | Exp=0x3f68 | Act=0x3f68
 # [755] [SCB WRITE] Addr=0x3 <= Data=0x6f3e
 # Driver
 # Monitor
-# [765] [SCB READ REQ] Addr=0x3 Queued
+# [765] [SCB PASS] Addr=0x3 | Exp=0x6f3e | Act=0x6f3e
 # Driver
 # Monitor
-# [775] [SCB PASS] Addr=0x3 | Exp=0x6f3e | Act=0x6f3e
 # [775] [SCB WRITE] Addr=0xe <= Data=0x1f21
 # Driver
 # Monitor
-# [785] [SCB READ REQ] Addr=0xe Queued
+# [785] [SCB PASS] Addr=0xe | Exp=0x1f21 | Act=0x1f21
 # Driver
 # Monitor
-# [795] [SCB PASS] Addr=0xe | Exp=0x1f21 | Act=0x1f21
 # [795] [SCB WRITE] Addr=0x1 <= Data=0x5c92
 # Driver
 # Monitor
-# [805] [SCB READ REQ] Addr=0x1 Queued
+# [805] [SCB PASS] Addr=0x1 | Exp=0x5c92 | Act=0x5c92
 # Driver
 # Monitor
-# [815] [SCB PASS] Addr=0x1 | Exp=0x5c92 | Act=0x5c92
 # [815] [SCB WRITE] Addr=0xa <= Data=0xd342
 # Driver
 # Monitor
-# [825] [SCB READ REQ] Addr=0xa Queued
+# [825] [SCB PASS] Addr=0xa | Exp=0xd342 | Act=0xd342
 # Driver
 # Monitor
-# [835] [SCB PASS] Addr=0xa | Exp=0xd342 | Act=0xd342
 # [835] [SCB WRITE] Addr=0x0 <= Data=0x69a9
 # Driver
 # Monitor
-# [845] [SCB READ REQ] Addr=0x0 Queued
+# [845] [SCB PASS] Addr=0x0 | Exp=0x69a9 | Act=0x69a9
 # Driver
 # Monitor
-# [855] [SCB PASS] Addr=0x0 | Exp=0x69a9 | Act=0x69a9
 # [855] [SCB WRITE] Addr=0xe <= Data=0xef08
 # Driver
 # Monitor
-# [865] [SCB READ REQ] Addr=0xe Queued
+# [865] [SCB PASS] Addr=0xe | Exp=0xef08 | Act=0xef08
 # Driver
 # Monitor
-# [875] [SCB PASS] Addr=0xe | Exp=0xef08 | Act=0xef08
 # [875] [SCB WRITE] Addr=0xf <= Data=0x6916
 # Driver
 # Monitor
-# [885] [SCB READ REQ] Addr=0xf Queued
+# [885] [SCB PASS] Addr=0xf | Exp=0x6916 | Act=0x6916
 # Driver
 # Monitor
-# [895] [SCB PASS] Addr=0xf | Exp=0x6916 | Act=0x6916
 # [895] [SCB WRITE] Addr=0xa <= Data=0xa778
 # Driver
 # Monitor
-# [905] [SCB READ REQ] Addr=0xa Queued
+# [905] [SCB PASS] Addr=0xa | Exp=0xa778 | Act=0xa778
 # Driver
 # Monitor
-# [915] [SCB PASS] Addr=0xa | Exp=0xa778 | Act=0xa778
 # [915] [SCB WRITE] Addr=0xc <= Data=0x82a1
 # Driver
 # Monitor
-# [925] [SCB READ REQ] Addr=0xc Queued
+# [925] [SCB PASS] Addr=0xc | Exp=0x82a1 | Act=0x82a1
 # Driver
 # Monitor
-# [935] [SCB PASS] Addr=0xc | Exp=0x82a1 | Act=0x82a1
 # [935] [SCB WRITE] Addr=0x0 <= Data=0x8a1e
 # Driver
 # Monitor
-# [945] [SCB READ REQ] Addr=0x0 Queued
+# [945] [SCB PASS] Addr=0x0 | Exp=0x8a1e | Act=0x8a1e
 # Driver
 # Monitor
-# [955] [SCB PASS] Addr=0x0 | Exp=0x8a1e | Act=0x8a1e
 # [955] [SCB WRITE] Addr=0x7 <= Data=0xa461
 # Driver
 # Monitor
-# [965] [SCB READ REQ] Addr=0x7 Queued
+# [965] [SCB PASS] Addr=0x7 | Exp=0xa461 | Act=0xa461
 # Driver
 # Monitor
-# [975] [SCB PASS] Addr=0x7 | Exp=0xa461 | Act=0xa461
 # [975] [SCB WRITE] Addr=0xf <= Data=0x2c3
 # Driver
 # Monitor
-# [985] [SCB READ REQ] Addr=0xf Queued
+# [985] [SCB PASS] Addr=0xf | Exp=0x2c3 | Act=0x2c3
 # Driver
 # Monitor
-# [995] [SCB PASS] Addr=0xf | Exp=0x2c3 | Act=0x2c3
 # [995] [SCB WRITE] Addr=0x4 <= Data=0xdb8f
 # Driver
 # Monitor
-# [1005] [SCB READ REQ] Addr=0x4 Queued
+# [1005] [SCB PASS] Addr=0x4 | Exp=0xdb8f | Act=0xdb8f
 # Driver
 # Monitor
-# [1015] [SCB PASS] Addr=0x4 | Exp=0xdb8f | Act=0xdb8f
 # [1015] [SCB WRITE] Addr=0xe <= Data=0xaf4d
 # Driver
 # Monitor
-# [1025] [SCB READ REQ] Addr=0xe Queued
+# [1025] [SCB PASS] Addr=0xe | Exp=0xaf4d | Act=0xaf4d
 # Driver
 # Monitor
-# [1035] [SCB PASS] Addr=0xe | Exp=0xaf4d | Act=0xaf4d
 # [1035] [SCB WRITE] Addr=0x3 <= Data=0x6715
 # Driver
 # Monitor
-# [1045] [SCB READ REQ] Addr=0x3 Queued
+# [1045] [SCB PASS] Addr=0x3 | Exp=0x6715 | Act=0x6715
 # Driver
 # Monitor
-# [1055] [SCB PASS] Addr=0x3 | Exp=0x6715 | Act=0x6715
 # [1055] [SCB WRITE] Addr=0xd <= Data=0xb203
 # Driver
 # Monitor
-# [1065] [SCB READ REQ] Addr=0xd Queued
+# [1065] [SCB PASS] Addr=0xd | Exp=0xb203 | Act=0xb203
 # Driver
 # Monitor
-# [1075] [SCB PASS] Addr=0xd | Exp=0xb203 | Act=0xb203
 # [1075] [SCB WRITE] Addr=0x4 <= Data=0xfe98
 # Driver
 # Monitor
-# [1085] [SCB READ REQ] Addr=0x4 Queued
+# [1085] [SCB PASS] Addr=0x4 | Exp=0xfe98 | Act=0xfe98
 # Driver
 # Monitor
-# [1095] [SCB PASS] Addr=0x4 | Exp=0xfe98 | Act=0xfe98
 # [1095] [SCB WRITE] Addr=0xe <= Data=0x2d5
 # Driver
 # Monitor
-# [1105] [SCB READ REQ] Addr=0xe Queued
+# [1105] [SCB PASS] Addr=0xe | Exp=0x2d5 | Act=0x2d5
 # Driver
 # Monitor
-# [1115] [SCB PASS] Addr=0xe | Exp=0x2d5 | Act=0x2d5
 # [1115] [SCB WRITE] Addr=0x2 <= Data=0xf0f9
 # Driver
 # Monitor
-# [1125] [SCB READ REQ] Addr=0x2 Queued
+# [1125] [SCB PASS] Addr=0x2 | Exp=0xf0f9 | Act=0xf0f9
 # Driver
 # Monitor
-# [1135] [SCB PASS] Addr=0x2 | Exp=0xf0f9 | Act=0xf0f9
 # [1135] [SCB WRITE] Addr=0x7 <= Data=0x54a0
 # Driver
 # Monitor
-# [1145] [SCB READ REQ] Addr=0x7 Queued
+# [1145] [SCB PASS] Addr=0x7 | Exp=0x54a0 | Act=0x54a0
 # Driver
 # Monitor
-# [1155] [SCB PASS] Addr=0x7 | Exp=0x54a0 | Act=0x54a0
 # [1155] [SCB WRITE] Addr=0xd <= Data=0xc160
 # Driver
 # Monitor
-# [1165] [SCB READ REQ] Addr=0xd Queued
+# [1165] [SCB PASS] Addr=0xd | Exp=0xc160 | Act=0xc160
 # Driver
 # Monitor
-# [1175] [SCB PASS] Addr=0xd | Exp=0xc160 | Act=0xc160
 # [1175] [SCB WRITE] Addr=0x4 <= Data=0x77e
 # Driver
 # Monitor
-# [1185] [SCB READ REQ] Addr=0x4 Queued
+# [1185] [SCB PASS] Addr=0x4 | Exp=0x77e | Act=0x77e
 # Driver
 # Monitor
-# [1195] [SCB PASS] Addr=0x4 | Exp=0x77e | Act=0x77e
 # [1195] [SCB WRITE] Addr=0x8 <= Data=0x8d64
 # Driver
 # Monitor
-# [1205] [SCB READ REQ] Addr=0x8 Queued
+# [1205] [SCB PASS] Addr=0x8 | Exp=0x8d64 | Act=0x8d64
 # Driver
 # Monitor
-# [1215] [SCB PASS] Addr=0x8 | Exp=0x8d64 | Act=0x8d64
 # [1215] [SCB WRITE] Addr=0xa <= Data=0x7621
 # Driver
 # Monitor
-# [1225] [SCB READ REQ] Addr=0xa Queued
+# [1225] [SCB PASS] Addr=0xa | Exp=0x7621 | Act=0x7621
 # Driver
 # Monitor
-# [1235] [SCB PASS] Addr=0xa | Exp=0x7621 | Act=0x7621
 # [1235] [SCB WRITE] Addr=0xb <= Data=0x8318
 # Driver
 # Monitor
-# [1245] [SCB READ REQ] Addr=0xb Queued
+# [1245] [SCB PASS] Addr=0xb | Exp=0x8318 | Act=0x8318
 # Driver
 # Monitor
-# [1255] [SCB PASS] Addr=0xb | Exp=0x8318 | Act=0x8318
 # [1255] [SCB WRITE] Addr=0x2 <= Data=0xec68
 # Driver
 # Monitor
-# [1265] [SCB READ REQ] Addr=0x2 Queued
+# [1265] [SCB PASS] Addr=0x2 | Exp=0xec68 | Act=0xec68
 # Driver
 # Monitor
-# [1275] [SCB PASS] Addr=0x2 | Exp=0xec68 | Act=0xec68
 # [1275] [SCB WRITE] Addr=0x3 <= Data=0x55ad
 # Driver
 # Monitor
-# [1285] [SCB READ REQ] Addr=0x3 Queued
+# [1285] [SCB PASS] Addr=0x3 | Exp=0x55ad | Act=0x55ad
 # Driver
 # Monitor
-# [1295] [SCB PASS] Addr=0x3 | Exp=0x55ad | Act=0x55ad
 # [1295] [SCB WRITE] Addr=0x4 <= Data=0xe015
 # Driver
 # Monitor
-# [1305] [SCB READ REQ] Addr=0x4 Queued
+# [1305] [SCB PASS] Addr=0x4 | Exp=0xe015 | Act=0xe015
 # Driver
 # Monitor
-# [1315] [SCB PASS] Addr=0x4 | Exp=0xe015 | Act=0xe015
 # [1315] [SCB WRITE] Addr=0x0 <= Data=0xd3e4
 # Driver
 # Monitor
-# [1325] [SCB READ REQ] Addr=0x0 Queued
+# [1325] [SCB PASS] Addr=0x0 | Exp=0xd3e4 | Act=0xd3e4
 # Driver
 # Monitor
-# [1335] [SCB PASS] Addr=0x0 | Exp=0xd3e4 | Act=0xd3e4
 # [1335] [SCB WRITE] Addr=0x2 <= Data=0x372d
 # Driver
 # Monitor
-# [1345] [SCB READ REQ] Addr=0x2 Queued
+# [1345] [SCB PASS] Addr=0x2 | Exp=0x372d | Act=0x372d
 # Driver
 # Monitor
-# [1355] [SCB PASS] Addr=0x2 | Exp=0x372d | Act=0x372d
 # [1355] [SCB WRITE] Addr=0x3 <= Data=0xb970
 # Driver
 # Monitor
-# [1365] [SCB READ REQ] Addr=0x3 Queued
+# [1365] [SCB PASS] Addr=0x3 | Exp=0xb970 | Act=0xb970
 # Driver
 # Monitor
-# [1375] [SCB PASS] Addr=0x3 | Exp=0xb970 | Act=0xb970
 # [1375] [SCB WRITE] Addr=0x5 <= Data=0x865a
 # Driver
 # Monitor
-# [1385] [SCB READ REQ] Addr=0x5 Queued
+# [1385] [SCB PASS] Addr=0x5 | Exp=0x865a | Act=0x865a
 # Driver
 # Monitor
-# [1395] [SCB PASS] Addr=0x5 | Exp=0x865a | Act=0x865a
 # [1395] [SCB WRITE] Addr=0xb <= Data=0x18e6
 # Driver
 # Monitor
-# [1405] [SCB READ REQ] Addr=0xb Queued
+# [1405] [SCB PASS] Addr=0xb | Exp=0x18e6 | Act=0x18e6
 # Driver
 # Monitor
-# [1415] [SCB PASS] Addr=0xb | Exp=0x18e6 | Act=0x18e6
 # [1415] [SCB WRITE] Addr=0x0 <= Data=0x98ac
 # Driver
 # Monitor
-# [1425] [SCB READ REQ] Addr=0x0 Queued
+# [1425] [SCB PASS] Addr=0x0 | Exp=0x98ac | Act=0x98ac
 # Driver
 # Monitor
-# [1435] [SCB PASS] Addr=0x0 | Exp=0x98ac | Act=0x98ac
 # [1435] [SCB WRITE] Addr=0xd <= Data=0x9e25
 # Driver
 # Monitor
-# [1445] [SCB READ REQ] Addr=0xd Queued
+# [1445] [SCB PASS] Addr=0xd | Exp=0x9e25 | Act=0x9e25
 # Driver
 # Monitor
-# [1455] [SCB PASS] Addr=0xd | Exp=0x9e25 | Act=0x9e25
 # [1455] [SCB WRITE] Addr=0x8 <= Data=0xd5a5
 # Driver
 # Monitor
-# [1465] [SCB READ REQ] Addr=0x8 Queued
+# [1465] [SCB PASS] Addr=0x8 | Exp=0xd5a5 | Act=0xd5a5
 # Driver
 # Monitor
-# [1475] [SCB PASS] Addr=0x8 | Exp=0xd5a5 | Act=0xd5a5
 # [1475] [SCB WRITE] Addr=0x0 <= Data=0xd460
 # Driver
 # Monitor
-# [1485] [SCB READ REQ] Addr=0x0 Queued
+# [1485] [SCB PASS] Addr=0x0 | Exp=0xd460 | Act=0xd460
 # Driver
 # Monitor
-# [1495] [SCB PASS] Addr=0x0 | Exp=0xd460 | Act=0xd460
 # [1495] [SCB WRITE] Addr=0x3 <= Data=0x2a8f
 # Driver
 # Monitor
-# [1505] [SCB READ REQ] Addr=0x3 Queued
+# [1505] [SCB PASS] Addr=0x3 | Exp=0x2a8f | Act=0x2a8f
 # Driver
 # Monitor
-# [1515] [SCB PASS] Addr=0x3 | Exp=0x2a8f | Act=0x2a8f
 # [1515] [SCB WRITE] Addr=0x9 <= Data=0x9ec8
 # Driver
 # Monitor
-# [1525] [SCB READ REQ] Addr=0x9 Queued
+# [1525] [SCB PASS] Addr=0x9 | Exp=0x9ec8 | Act=0x9ec8
 # Driver
 # Monitor
-# [1535] [SCB PASS] Addr=0x9 | Exp=0x9ec8 | Act=0x9ec8
 # [1535] [SCB WRITE] Addr=0xf <= Data=0xa263
 # Driver
 # Monitor
-# [1545] [SCB READ REQ] Addr=0xf Queued
+# [1545] [SCB PASS] Addr=0xf | Exp=0xa263 | Act=0xa263
 # Driver
 # Monitor
-# [1555] [SCB PASS] Addr=0xf | Exp=0xa263 | Act=0xa263
 # [1555] [SCB WRITE] Addr=0xc <= Data=0xc8ef
 # Driver
 # Monitor
-# [1565] [SCB READ REQ] Addr=0xc Queued
+# [1565] [SCB PASS] Addr=0xc | Exp=0xc8ef | Act=0xc8ef
 # Driver
 # Monitor
-# [1575] [SCB PASS] Addr=0xc | Exp=0xc8ef | Act=0xc8ef
 # [1575] [SCB WRITE] Addr=0x3 <= Data=0x276d
 # Driver
 # Monitor
-# [1585] [SCB READ REQ] Addr=0x3 Queued
+# [1585] [SCB PASS] Addr=0x3 | Exp=0x276d | Act=0x276d
 # Driver
 # Monitor
-# [1595] [SCB PASS] Addr=0x3 | Exp=0x276d | Act=0x276d
 # [1595] [SCB WRITE] Addr=0xb <= Data=0x4c0d
 # Driver
 # Monitor
-# [1605] [SCB READ REQ] Addr=0xb Queued
+# [1605] [SCB PASS] Addr=0xb | Exp=0x4c0d | Act=0x4c0d
 # Driver
 # Monitor
-# [1615] [SCB PASS] Addr=0xb | Exp=0x4c0d | Act=0x4c0d
 # [1615] [SCB WRITE] Addr=0xb <= Data=0x80dc
 # Driver
 # Monitor
-# [1625] [SCB READ REQ] Addr=0xb Queued
+# [1625] [SCB PASS] Addr=0xb | Exp=0x80dc | Act=0x80dc
 # Driver
 # Monitor
-# [1635] [SCB PASS] Addr=0xb | Exp=0x80dc | Act=0x80dc
 # [1635] [SCB WRITE] Addr=0xa <= Data=0x6486
 # Driver
 # Monitor
-# [1645] [SCB READ REQ] Addr=0xa Queued
+# [1645] [SCB PASS] Addr=0xa | Exp=0x6486 | Act=0x6486
 # Driver
 # Monitor
-# [1655] [SCB PASS] Addr=0xa | Exp=0x6486 | Act=0x6486
 # [1655] [SCB WRITE] Addr=0x1 <= Data=0x2b17
 # Driver
 # Monitor
-# [1665] [SCB READ REQ] Addr=0x1 Queued
+# [1665] [SCB PASS] Addr=0x1 | Exp=0x2b17 | Act=0x2b17
 # Driver
 # Monitor
-# [1675] [SCB PASS] Addr=0x1 | Exp=0x2b17 | Act=0x2b17
 # [1675] [SCB WRITE] Addr=0x8 <= Data=0x43cb
 # Driver
 # Monitor
-# [1685] [SCB READ REQ] Addr=0x8 Queued
+# [1685] [SCB PASS] Addr=0x8 | Exp=0x43cb | Act=0x43cb
 # Driver
 # Monitor
-# [1695] [SCB PASS] Addr=0x8 | Exp=0x43cb | Act=0x43cb
 # [1695] [SCB WRITE] Addr=0x3 <= Data=0x333c
 # Driver
 # Monitor
-# [1705] [SCB READ REQ] Addr=0x3 Queued
+# [1705] [SCB PASS] Addr=0x3 | Exp=0x333c | Act=0x333c
 # Driver
 # Monitor
-# [1715] [SCB PASS] Addr=0x3 | Exp=0x333c | Act=0x333c
 # [1715] [SCB WRITE] Addr=0xf <= Data=0x21f7
 # Driver
 # Monitor
-# [1725] [SCB READ REQ] Addr=0xf Queued
+# [1725] [SCB PASS] Addr=0xf | Exp=0x21f7 | Act=0x21f7
 # Driver
 # Monitor
-# [1735] [SCB PASS] Addr=0xf | Exp=0x21f7 | Act=0x21f7
 # [1735] [SCB WRITE] Addr=0x2 <= Data=0xca37
 # Driver
 # Monitor
-# [1745] [SCB READ REQ] Addr=0x2 Queued
+# [1745] [SCB PASS] Addr=0x2 | Exp=0xca37 | Act=0xca37
 # Driver
 # Monitor
-# [1755] [SCB PASS] Addr=0x2 | Exp=0xca37 | Act=0xca37
 # [1755] [SCB WRITE] Addr=0x8 <= Data=0xb226
 # Driver
 # Monitor
-# [1765] [SCB READ REQ] Addr=0x8 Queued
+# [1765] [SCB PASS] Addr=0x8 | Exp=0xb226 | Act=0xb226
 # Driver
 # Monitor
-# [1775] [SCB PASS] Addr=0x8 | Exp=0xb226 | Act=0xb226
 # [1775] [SCB WRITE] Addr=0x1 <= Data=0xd21b
 # Driver
 # Monitor
-# [1785] [SCB READ REQ] Addr=0x1 Queued
+# [1785] [SCB PASS] Addr=0x1 | Exp=0xd21b | Act=0xd21b
 # Driver
 # Monitor
-# [1795] [SCB PASS] Addr=0x1 | Exp=0xd21b | Act=0xd21b
 # [1795] [SCB WRITE] Addr=0x8 <= Data=0x796f
 # Driver
 # Monitor
-# [1805] [SCB READ REQ] Addr=0x8 Queued
+# [1805] [SCB PASS] Addr=0x8 | Exp=0x796f | Act=0x796f
 # Driver
 # Monitor
-# [1815] [SCB PASS] Addr=0x8 | Exp=0x796f | Act=0x796f
 # [1815] [SCB WRITE] Addr=0x6 <= Data=0x4bec
 # Driver
 # Monitor
-# [1825] [SCB READ REQ] Addr=0x6 Queued
+# [1825] [SCB PASS] Addr=0x6 | Exp=0x4bec | Act=0x4bec
 # Driver
 # Monitor
-# [1835] [SCB PASS] Addr=0x6 | Exp=0x4bec | Act=0x4bec
 # [1835] [SCB WRITE] Addr=0xb <= Data=0xe537
 # Driver
 # Monitor
-# [1845] [SCB READ REQ] Addr=0xb Queued
+# [1845] [SCB PASS] Addr=0xb | Exp=0xe537 | Act=0xe537
 # Driver
 # Monitor
-# [1855] [SCB PASS] Addr=0xb | Exp=0xe537 | Act=0xe537
 # [1855] [SCB WRITE] Addr=0xe <= Data=0xeb0
 # Driver
 # Monitor
-# [1865] [SCB READ REQ] Addr=0xe Queued
+# [1865] [SCB PASS] Addr=0xe | Exp=0xeb0 | Act=0xeb0
 # Driver
 # Monitor
-# [1875] [SCB PASS] Addr=0xe | Exp=0xeb0 | Act=0xeb0
 # [1875] [SCB WRITE] Addr=0xc <= Data=0x98e9
 # Driver
 # Monitor
-# [1885] [SCB READ REQ] Addr=0xc Queued
+# [1885] [SCB PASS] Addr=0xc | Exp=0x98e9 | Act=0x98e9
 # Driver
 # Monitor
-# [1895] [SCB PASS] Addr=0xc | Exp=0x98e9 | Act=0x98e9
 # [1895] [SCB WRITE] Addr=0xc <= Data=0x2a45
 # Driver
 # Monitor
-# [1905] [SCB READ REQ] Addr=0xc Queued
+# [1905] [SCB PASS] Addr=0xc | Exp=0x2a45 | Act=0x2a45
 # Driver
 # Monitor
-# [1915] [SCB PASS] Addr=0xc | Exp=0x2a45 | Act=0x2a45
 # [1915] [SCB WRITE] Addr=0xd <= Data=0x84a9
 # Driver
 # Monitor
-# [1925] [SCB READ REQ] Addr=0xd Queued
+# [1925] [SCB PASS] Addr=0xd | Exp=0x84a9 | Act=0x84a9
 # Driver
 # Monitor
-# [1935] [SCB PASS] Addr=0xd | Exp=0x84a9 | Act=0x84a9
 # [1935] [SCB WRITE] Addr=0xb <= Data=0x29e5
 # Driver
 # Monitor
-# [1945] [SCB READ REQ] Addr=0xb Queued
+# [1945] [SCB PASS] Addr=0xb | Exp=0x29e5 | Act=0x29e5
 # Driver
 # Monitor
-# [1955] [SCB PASS] Addr=0xb | Exp=0x29e5 | Act=0x29e5
 # [1955] [SCB WRITE] Addr=0xb <= Data=0x2666
 # Driver
 # Monitor
-# [1965] [SCB READ REQ] Addr=0xb Queued
+# [1965] [SCB PASS] Addr=0xb | Exp=0x2666 | Act=0x2666
 # Driver
 # Monitor
-# [1975] [SCB PASS] Addr=0xb | Exp=0x2666 | Act=0x2666
 # [1975] [SCB WRITE] Addr=0x6 <= Data=0x4e59
 # Driver
 # Monitor
-# [1985] [SCB READ REQ] Addr=0x6 Queued
+# [1985] [SCB PASS] Addr=0x6 | Exp=0x4e59 | Act=0x4e59
 # Driver
 # Monitor
-# [1995] [SCB PASS] Addr=0x6 | Exp=0x4e59 | Act=0x4e59
 # [1995] [SCB WRITE] Addr=0x2 <= Data=0xb76
 # Driver
 # Monitor
-# [2005] [SCB READ REQ] Addr=0x2 Queued
+# [2005] [SCB PASS] Addr=0x2 | Exp=0xb76 | Act=0xb76
 # Driver
 # Monitor
-# [2015] [SCB PASS] Addr=0x2 | Exp=0xb76 | Act=0xb76
 # [2015] [SCB WRITE] Addr=0xe <= Data=0x6ce6
 # Driver
 # Monitor
-# [2025] [SCB READ REQ] Addr=0xe Queued
+# [2025] [SCB PASS] Addr=0xe | Exp=0x6ce6 | Act=0x6ce6
 # Driver
 # Monitor
-# [2035] [SCB PASS] Addr=0xe | Exp=0x6ce6 | Act=0x6ce6
 # [2035] [SCB WRITE] Addr=0x9 <= Data=0xebe9
 # Driver
 # Monitor
-# [2045] [SCB READ REQ] Addr=0x9 Queued
+# [2045] [SCB PASS] Addr=0x9 | Exp=0xebe9 | Act=0xebe9
 # Driver
 # Monitor
-# [2055] [SCB PASS] Addr=0x9 | Exp=0xebe9 | Act=0xebe9
 # [2055] [SCB WRITE] Addr=0x0 <= Data=0x819a
 # Driver
 # Monitor
-# [2065] [SCB READ REQ] Addr=0x0 Queued
+# [2065] [SCB PASS] Addr=0x0 | Exp=0x819a | Act=0x819a
 # Driver
 # Monitor
-# [2075] [SCB PASS] Addr=0x0 | Exp=0x819a | Act=0x819a
 # [2075] [SCB WRITE] Addr=0xf <= Data=0x5aa8
 # Driver
 # Monitor
-# [2085] [SCB READ REQ] Addr=0xf Queued
+# [2085] [SCB PASS] Addr=0xf | Exp=0x5aa8 | Act=0x5aa8
 # Driver
 # Monitor
-# [2095] [SCB PASS] Addr=0xf | Exp=0x5aa8 | Act=0x5aa8
 # [2095] [SCB WRITE] Addr=0x8 <= Data=0x38bc
 # Driver
 # Monitor
-# [2105] [SCB READ REQ] Addr=0x8 Queued
+# [2105] [SCB PASS] Addr=0x8 | Exp=0x38bc | Act=0x38bc
 # Driver
 # Monitor
-# [2115] [SCB PASS] Addr=0x8 | Exp=0x38bc | Act=0x38bc
 # [2115] [SCB WRITE] Addr=0x4 <= Data=0x81ad
 # Driver
 # Monitor
-# [2125] [SCB READ REQ] Addr=0x8 Queued
+# [2125] [SCB PASS] Addr=0x8 | Exp=0x38bc | Act=0x38bc
 # Driver
 # Monitor
-# [2135] [SCB PASS] Addr=0x8 | Exp=0x38bc | Act=0x38bc
 # [2135] [SCB WRITE] Addr=0xf <= Data=0xa296
 # Driver
 # Monitor
-# [2145] [SCB READ REQ] Addr=0xf Queued
+# [2145] [SCB PASS] Addr=0xf | Exp=0xa296 | Act=0xa296
 # Driver
 # Monitor
-# [2155] [SCB PASS] Addr=0xf | Exp=0xa296 | Act=0xa296
 # [2155] [SCB WRITE] Addr=0xd <= Data=0x780f
 # Driver
 # Monitor
-# [2165] [SCB READ REQ] Addr=0x4 Queued
+# [2165] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # Driver
 # Monitor
-# [2175] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # [2175] [SCB WRITE] Addr=0x9 <= Data=0x5968
 # Driver
 # Monitor
-# [2185] [SCB READ REQ] Addr=0xd Queued
+# [2185] [SCB PASS] Addr=0xd | Exp=0x780f | Act=0x780f
 # Driver
 # Monitor
-# [2195] [SCB PASS] Addr=0xd | Exp=0x780f | Act=0x780f
 # [2195] [SCB WRITE] Addr=0x8 <= Data=0xab23
 # Driver
 # Monitor
-# [2205] [SCB READ REQ] Addr=0x8 Queued
+# [2205] [SCB PASS] Addr=0x8 | Exp=0xab23 | Act=0xab23
 # Driver
 # Monitor
-# [2215] [SCB PASS] Addr=0x8 | Exp=0xab23 | Act=0xab23
 # [2215] [SCB WRITE] Addr=0x5 <= Data=0xfbf4
 # Driver
 # Monitor
-# [2225] [SCB READ REQ] Addr=0x4 Queued
+# [2225] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # Driver
 # Monitor
-# [2235] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # [2235] [SCB WRITE] Addr=0x8 <= Data=0x472f
 # Driver
 # Monitor
-# [2245] [SCB READ REQ] Addr=0x4 Queued
+# [2245] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # Driver
 # Monitor
-# [2255] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # [2255] [SCB WRITE] Addr=0xa <= Data=0x99de
 # Driver
 # Monitor
-# [2265] [SCB READ REQ] Addr=0x8 Queued
+# [2265] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2275] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2275] [SCB WRITE] Addr=0xb <= Data=0x8d0c
 # Driver
 # Monitor
-# [2285] [SCB READ REQ] Addr=0xb Queued
+# [2285] [SCB PASS] Addr=0xb | Exp=0x8d0c | Act=0x8d0c
 # Driver
 # Monitor
-# [2295] [SCB PASS] Addr=0xb | Exp=0x8d0c | Act=0x8d0c
 # [2295] [SCB WRITE] Addr=0xd <= Data=0x8537
 # Driver
 # Monitor
-# [2305] [SCB READ REQ] Addr=0x4 Queued
+# [2305] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # Driver
 # Monitor
-# [2315] [SCB PASS] Addr=0x4 | Exp=0x81ad | Act=0x81ad
 # [2315] [SCB WRITE] Addr=0x4 <= Data=0x8e46
 # Driver
 # Monitor
-# [2325] [SCB READ REQ] Addr=0xa Queued
+# [2325] [SCB PASS] Addr=0xa | Exp=0x99de | Act=0x99de
 # Driver
 # Monitor
-# [2335] [SCB PASS] Addr=0xa | Exp=0x99de | Act=0x99de
 # [2335] [SCB WRITE] Addr=0xa <= Data=0x18c
 # Driver
 # Monitor
-# [2345] [SCB READ REQ] Addr=0x8 Queued
+# [2345] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2355] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2355] [SCB WRITE] Addr=0x3 <= Data=0x88f4
 # Driver
 # Monitor
-# [2365] [SCB READ REQ] Addr=0x4 Queued
+# [2365] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # Driver
 # Monitor
-# [2375] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # [2375] [SCB WRITE] Addr=0x2 <= Data=0xad78
 # Driver
 # Monitor
-# [2385] [SCB READ REQ] Addr=0xb Queued
+# [2385] [SCB PASS] Addr=0xb | Exp=0x8d0c | Act=0x8d0c
 # Driver
 # Monitor
-# [2395] [SCB PASS] Addr=0xb | Exp=0x8d0c | Act=0x8d0c
 # [2395] [SCB WRITE] Addr=0xe <= Data=0x2b08
 # Driver
 # Monitor
-# [2405] [SCB READ REQ] Addr=0xd Queued
+# [2405] [SCB PASS] Addr=0xd | Exp=0x8537 | Act=0x8537
 # Driver
 # Monitor
-# [2415] [SCB PASS] Addr=0xd | Exp=0x8537 | Act=0x8537
 # [2415] [SCB WRITE] Addr=0xb <= Data=0x93fb
 # Driver
 # Monitor
-# [2425] [SCB READ REQ] Addr=0x8 Queued
+# [2425] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2435] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2435] [SCB WRITE] Addr=0xb <= Data=0xf9e2
 # Driver
 # Monitor
-# [2445] [SCB READ REQ] Addr=0x8 Queued
+# [2445] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2455] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2455] [SCB WRITE] Addr=0x6 <= Data=0xd0a2
 # Driver
 # Monitor
-# [2465] [SCB READ REQ] Addr=0xa Queued
+# [2465] [SCB PASS] Addr=0xa | Exp=0x18c | Act=0x18c
 # Driver
 # Monitor
-# [2475] [SCB PASS] Addr=0xa | Exp=0x18c | Act=0x18c
 # [2475] [SCB WRITE] Addr=0x6 <= Data=0xe245
 # Driver
 # Monitor
-# [2485] [SCB READ REQ] Addr=0xa Queued
+# [2485] [SCB PASS] Addr=0xa | Exp=0x18c | Act=0x18c
 # Driver
 # Monitor
-# [2495] [SCB PASS] Addr=0xa | Exp=0x18c | Act=0x18c
 # [2495] [SCB WRITE] Addr=0xa <= Data=0x7aab
 # Driver
 # Monitor
-# [2505] [SCB READ REQ] Addr=0xa Queued
+# [2505] [SCB PASS] Addr=0xa | Exp=0x7aab | Act=0x7aab
 # Driver
 # Monitor
-# [2515] [SCB PASS] Addr=0xa | Exp=0x7aab | Act=0x7aab
 # [2515] [SCB WRITE] Addr=0x7 <= Data=0x71d1
 # Driver
 # Monitor
-# [2525] [SCB READ REQ] Addr=0x8 Queued
+# [2525] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2535] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2535] [SCB WRITE] Addr=0x1 <= Data=0x2b62
 # Driver
 # Monitor
-# [2545] [SCB READ REQ] Addr=0xa Queued
+# [2545] [SCB PASS] Addr=0xa | Exp=0x7aab | Act=0x7aab
 # Driver
 # Monitor
-# [2555] [SCB PASS] Addr=0xa | Exp=0x7aab | Act=0x7aab
 # [2555] [SCB WRITE] Addr=0x2 <= Data=0x2707
 # Driver
 # Monitor
-# [2565] [SCB READ REQ] Addr=0xb Queued
+# [2565] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [2575] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [2575] [SCB WRITE] Addr=0xf <= Data=0x759d
 # Driver
 # Monitor
-# [2585] [SCB READ REQ] Addr=0x2 Queued
+# [2585] [SCB PASS] Addr=0x2 | Exp=0x2707 | Act=0x2707
 # Driver
 # Monitor
-# [2595] [SCB PASS] Addr=0x2 | Exp=0x2707 | Act=0x2707
 # [2595] [SCB WRITE] Addr=0x6 <= Data=0x59fc
 # Driver
 # Monitor
-# [2605] [SCB READ REQ] Addr=0x1 Queued
+# [2605] [SCB PASS] Addr=0x1 | Exp=0x2b62 | Act=0x2b62
 # Driver
 # Monitor
-# [2615] [SCB PASS] Addr=0x1 | Exp=0x2b62 | Act=0x2b62
 # [2615] [SCB WRITE] Addr=0xa <= Data=0x5d29
 # Driver
 # Monitor
-# [2625] [SCB READ REQ] Addr=0xe Queued
+# [2625] [SCB PASS] Addr=0xe | Exp=0x2b08 | Act=0x2b08
 # Driver
 # Monitor
-# [2635] [SCB PASS] Addr=0xe | Exp=0x2b08 | Act=0x2b08
 # [2635] [SCB WRITE] Addr=0x3 <= Data=0x3224
 # Driver
 # Monitor
-# [2645] [SCB READ REQ] Addr=0x8 Queued
+# [2645] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2655] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2655] [SCB WRITE] Addr=0xf <= Data=0xe043
 # Driver
 # Monitor
-# [2665] [SCB READ REQ] Addr=0x8 Queued
+# [2665] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # Driver
 # Monitor
-# [2675] [SCB PASS] Addr=0x8 | Exp=0x472f | Act=0x472f
 # [2675] [SCB WRITE] Addr=0x3 <= Data=0x928
 # Driver
 # Monitor
-# [2685] [SCB READ REQ] Addr=0x6 Queued
+# [2685] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # Driver
 # Monitor
-# [2695] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # [2695] [SCB WRITE] Addr=0xc <= Data=0xcc03
 # Driver
 # Monitor
-# [2705] [SCB READ REQ] Addr=0x1 Queued
+# [2705] [SCB PASS] Addr=0x1 | Exp=0x2b62 | Act=0x2b62
 # Driver
 # Monitor
-# [2715] [SCB PASS] Addr=0x1 | Exp=0x2b62 | Act=0x2b62
 # [2715] [SCB WRITE] Addr=0xa <= Data=0x70b8
 # Driver
 # Monitor
-# [2725] [SCB READ REQ] Addr=0x7 Queued
+# [2725] [SCB PASS] Addr=0x7 | Exp=0x71d1 | Act=0x71d1
 # Driver
 # Monitor
-# [2735] [SCB PASS] Addr=0x7 | Exp=0x71d1 | Act=0x71d1
 # [2735] [SCB WRITE] Addr=0x1 <= Data=0xf736
 # Driver
 # Monitor
-# [2745] [SCB READ REQ] Addr=0xb Queued
+# [2745] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [2755] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [2755] [SCB WRITE] Addr=0x9 <= Data=0xd1c8
 # Driver
 # Monitor
-# [2765] [SCB READ REQ] Addr=0xa Queued
+# [2765] [SCB PASS] Addr=0xa | Exp=0x70b8 | Act=0x70b8
 # Driver
 # Monitor
-# [2775] [SCB PASS] Addr=0xa | Exp=0x70b8 | Act=0x70b8
 # [2775] [SCB WRITE] Addr=0xf <= Data=0x1abf
 # Driver
 # Monitor
-# [2785] [SCB READ REQ] Addr=0xf Queued
+# [2785] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [2795] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [2795] [SCB WRITE] Addr=0x2 <= Data=0x8bc0
 # Driver
 # Monitor
-# [2805] [SCB READ REQ] Addr=0xf Queued
+# [2805] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [2815] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [2815] [SCB WRITE] Addr=0x8 <= Data=0x6e59
 # Driver
 # Monitor
-# [2825] [SCB READ REQ] Addr=0xb Queued
+# [2825] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [2835] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [2835] [SCB WRITE] Addr=0x3 <= Data=0x54bf
 # Driver
 # Monitor
-# [2845] [SCB READ REQ] Addr=0xb Queued
+# [2845] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [2855] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [2855] [SCB WRITE] Addr=0x1 <= Data=0x5715
 # Driver
 # Monitor
-# [2865] [SCB READ REQ] Addr=0x4 Queued
+# [2865] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # Driver
 # Monitor
-# [2875] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # [2875] [SCB WRITE] Addr=0x1 <= Data=0xeaf1
 # Driver
 # Monitor
-# [2885] [SCB READ REQ] Addr=0xd Queued
+# [2885] [SCB PASS] Addr=0xd | Exp=0x8537 | Act=0x8537
 # Driver
 # Monitor
-# [2895] [SCB PASS] Addr=0xd | Exp=0x8537 | Act=0x8537
 # [2895] [SCB WRITE] Addr=0x8 <= Data=0x7ed1
 # Driver
 # Monitor
-# [2905] [SCB READ REQ] Addr=0xf Queued
+# [2905] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [2915] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [2915] [SCB WRITE] Addr=0x5 <= Data=0xd99b
 # Driver
 # Monitor
-# [2925] [SCB READ REQ] Addr=0xf Queued
+# [2925] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [2935] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [2935] [SCB WRITE] Addr=0x2 <= Data=0x2fc8
 # Driver
 # Monitor
-# [2945] [SCB READ REQ] Addr=0x4 Queued
+# [2945] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # Driver
 # Monitor
-# [2955] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # [2955] [SCB WRITE] Addr=0xe <= Data=0x9f29
 # Driver
 # Monitor
-# [2965] [SCB READ REQ] Addr=0xf Queued
+# [2965] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [2975] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [2975] [SCB WRITE] Addr=0xd <= Data=0x9159
 # Driver
 # Monitor
-# [2985] [SCB READ REQ] Addr=0x4 Queued
+# [2985] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # Driver
 # Monitor
-# [2995] [SCB PASS] Addr=0x4 | Exp=0x8e46 | Act=0x8e46
 # [2995] [SCB WRITE] Addr=0x8 <= Data=0xa47f
 # Driver
 # Monitor
-# [3005] [SCB READ REQ] Addr=0xf Queued
+# [3005] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # Driver
 # Monitor
-# [3015] [SCB PASS] Addr=0xf | Exp=0x1abf | Act=0x1abf
 # [3015] [SCB WRITE] Addr=0x9 <= Data=0x4023
 # Driver
 # Monitor
-# [3025] [SCB READ REQ] Addr=0x6 Queued
+# [3025] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # Driver
 # Monitor
-# [3035] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # [3035] [SCB WRITE] Addr=0x2 <= Data=0x2247
 # Driver
 # Monitor
-# [3045] [SCB READ REQ] Addr=0x5 Queued
+# [3045] [SCB PASS] Addr=0x5 | Exp=0xd99b | Act=0xd99b
 # Driver
 # Monitor
-# [3055] [SCB PASS] Addr=0x5 | Exp=0xd99b | Act=0xd99b
 # [3055] [SCB WRITE] Addr=0x8 <= Data=0x43e4
 # Driver
 # Monitor
-# [3065] [SCB READ REQ] Addr=0x2 Queued
+# [3065] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # Driver
 # Monitor
-# [3075] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # [3075] [SCB WRITE] Addr=0xe <= Data=0x6e60
 # Driver
 # Monitor
-# [3085] [SCB READ REQ] Addr=0x1 Queued
+# [3085] [SCB PASS] Addr=0x1 | Exp=0xeaf1 | Act=0xeaf1
 # Driver
 # Monitor
-# [3095] [SCB PASS] Addr=0x1 | Exp=0xeaf1 | Act=0xeaf1
 # [3095] [SCB WRITE] Addr=0xe <= Data=0x1755
 # Driver
 # Monitor
-# [3105] [SCB READ REQ] Addr=0xb Queued
+# [3105] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [3115] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [3115] [SCB WRITE] Addr=0x4 <= Data=0x98f5
 # Driver
 # Monitor
-# [3125] [SCB READ REQ] Addr=0x8 Queued
+# [3125] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3135] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3135] [SCB WRITE] Addr=0xe <= Data=0x7654
 # Driver
 # Monitor
-# [3145] [SCB READ REQ] Addr=0x8 Queued
+# [3145] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3155] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3155] [SCB WRITE] Addr=0x3 <= Data=0x2520
 # Driver
 # Monitor
-# [3165] [SCB READ REQ] Addr=0x6 Queued
+# [3165] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # Driver
 # Monitor
-# [3175] [SCB PASS] Addr=0x6 | Exp=0x59fc | Act=0x59fc
 # [3175] [SCB WRITE] Addr=0x4 <= Data=0x1b1
 # Driver
 # Monitor
-# [3185] [SCB READ REQ] Addr=0xc Queued
+# [3185] [SCB PASS] Addr=0xc | Exp=0xcc03 | Act=0xcc03
 # Driver
 # Monitor
-# [3195] [SCB PASS] Addr=0xc | Exp=0xcc03 | Act=0xcc03
 # [3195] [SCB WRITE] Addr=0x5 <= Data=0x496f
 # Driver
 # Monitor
-# [3205] [SCB READ REQ] Addr=0xb Queued
+# [3205] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # Driver
 # Monitor
-# [3215] [SCB PASS] Addr=0xb | Exp=0xf9e2 | Act=0xf9e2
 # [3215] [SCB WRITE] Addr=0xc <= Data=0x554e
 # Driver
 # Monitor
-# [3225] [SCB READ REQ] Addr=0x4 Queued
+# [3225] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # Driver
 # Monitor
-# [3235] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # [3235] [SCB WRITE] Addr=0xa <= Data=0x2b1e
 # Driver
 # Monitor
-# [3245] [SCB READ REQ] Addr=0xe Queued
+# [3245] [SCB PASS] Addr=0xe | Exp=0x7654 | Act=0x7654
 # Driver
 # Monitor
-# [3255] [SCB PASS] Addr=0xe | Exp=0x7654 | Act=0x7654
 # [3255] [SCB WRITE] Addr=0xd <= Data=0x78a1
 # Driver
 # Monitor
-# [3265] [SCB READ REQ] Addr=0x2 Queued
+# [3265] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # Driver
 # Monitor
-# [3275] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # [3275] [SCB WRITE] Addr=0x5 <= Data=0x107b
 # Driver
 # Monitor
-# [3285] [SCB READ REQ] Addr=0x1 Queued
+# [3285] [SCB PASS] Addr=0x1 | Exp=0xeaf1 | Act=0xeaf1
 # Driver
 # Monitor
-# [3295] [SCB PASS] Addr=0x1 | Exp=0xeaf1 | Act=0xeaf1
 # [3295] [SCB WRITE] Addr=0xe <= Data=0x90cd
 # Driver
 # Monitor
-# [3305] [SCB READ REQ] Addr=0x2 Queued
+# [3305] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # Driver
 # Monitor
-# [3315] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # [3315] [SCB WRITE] Addr=0xc <= Data=0x6c2f
 # Driver
 # Monitor
-# [3325] [SCB READ REQ] Addr=0xe Queued
+# [3325] [SCB PASS] Addr=0xe | Exp=0x90cd | Act=0x90cd
 # Driver
 # Monitor
-# [3335] [SCB PASS] Addr=0xe | Exp=0x90cd | Act=0x90cd
 # [3335] [SCB WRITE] Addr=0xf <= Data=0x8a19
 # Driver
 # Monitor
-# [3345] [SCB READ REQ] Addr=0x2 Queued
+# [3345] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # Driver
 # Monitor
-# [3355] [SCB PASS] Addr=0x2 | Exp=0x2247 | Act=0x2247
 # [3355] [SCB WRITE] Addr=0xd <= Data=0xc670
 # Driver
 # Monitor
-# [3365] [SCB READ REQ] Addr=0xd Queued
+# [3365] [SCB PASS] Addr=0xd | Exp=0xc670 | Act=0xc670
 # Driver
 # Monitor
-# [3375] [SCB PASS] Addr=0xd | Exp=0xc670 | Act=0xc670
 # [3375] [SCB WRITE] Addr=0xc <= Data=0xb888
 # Driver
 # Monitor
-# [3385] [SCB READ REQ] Addr=0xa Queued
+# [3385] [SCB PASS] Addr=0xa | Exp=0x2b1e | Act=0x2b1e
 # Driver
 # Monitor
-# [3395] [SCB PASS] Addr=0xa | Exp=0x2b1e | Act=0x2b1e
 # [3395] [SCB WRITE] Addr=0x2 <= Data=0x6f9c
 # Driver
 # Monitor
-# [3405] [SCB READ REQ] Addr=0xd Queued
+# [3405] [SCB PASS] Addr=0xd | Exp=0xc670 | Act=0xc670
 # Driver
 # Monitor
-# [3415] [SCB PASS] Addr=0xd | Exp=0xc670 | Act=0xc670
 # [3415] [SCB WRITE] Addr=0xa <= Data=0xbf17
 # Driver
 # Monitor
-# [3425] [SCB READ REQ] Addr=0x8 Queued
+# [3425] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3435] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3435] [SCB WRITE] Addr=0x2 <= Data=0xced1
 # Driver
 # Monitor
-# [3445] [SCB READ REQ] Addr=0xf Queued
+# [3445] [SCB PASS] Addr=0xf | Exp=0x8a19 | Act=0x8a19
 # Driver
 # Monitor
-# [3455] [SCB PASS] Addr=0xf | Exp=0x8a19 | Act=0x8a19
 # [3455] [SCB WRITE] Addr=0xb <= Data=0x6407
 # Driver
 # Monitor
-# [3465] [SCB READ REQ] Addr=0xf Queued
+# [3465] [SCB PASS] Addr=0xf | Exp=0x8a19 | Act=0x8a19
 # Driver
 # Monitor
-# [3475] [SCB PASS] Addr=0xf | Exp=0x8a19 | Act=0x8a19
 # [3475] [SCB WRITE] Addr=0xf <= Data=0xec21
 # Driver
 # Monitor
-# [3485] [SCB READ REQ] Addr=0x8 Queued
+# [3485] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3495] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3495] [SCB WRITE] Addr=0x6 <= Data=0xca2
 # Driver
 # Monitor
-# [3505] [SCB READ REQ] Addr=0xf Queued
+# [3505] [SCB PASS] Addr=0xf | Exp=0xec21 | Act=0xec21
 # Driver
 # Monitor
-# [3515] [SCB PASS] Addr=0xf | Exp=0xec21 | Act=0xec21
 # [3515] [SCB WRITE] Addr=0xd <= Data=0xbc43
 # Driver
 # Monitor
-# [3525] [SCB READ REQ] Addr=0x4 Queued
+# [3525] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # Driver
 # Monitor
-# [3535] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # [3535] [SCB WRITE] Addr=0xa <= Data=0xc64f
 # Driver
 # Monitor
-# [3545] [SCB READ REQ] Addr=0x4 Queued
+# [3545] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # Driver
 # Monitor
-# [3555] [SCB PASS] Addr=0x4 | Exp=0x1b1 | Act=0x1b1
 # [3555] [SCB WRITE] Addr=0x1 <= Data=0x46a9
 # Driver
 # Monitor
-# [3565] [SCB READ REQ] Addr=0x6 Queued
+# [3565] [SCB PASS] Addr=0x6 | Exp=0xca2 | Act=0xca2
 # Driver
 # Monitor
-# [3575] [SCB PASS] Addr=0x6 | Exp=0xca2 | Act=0xca2
 # [3575] [SCB WRITE] Addr=0xa <= Data=0x6e7e
 # Driver
 # Monitor
-# [3585] [SCB READ REQ] Addr=0xb Queued
+# [3585] [SCB PASS] Addr=0xb | Exp=0x6407 | Act=0x6407
 # Driver
 # Monitor
-# [3595] [SCB PASS] Addr=0xb | Exp=0x6407 | Act=0x6407
 # [3595] [SCB WRITE] Addr=0xd <= Data=0x64be
 # Driver
 # Monitor
-# [3605] [SCB READ REQ] Addr=0x5 Queued
+# [3605] [SCB PASS] Addr=0x5 | Exp=0x107b | Act=0x107b
 # Driver
 # Monitor
-# [3615] [SCB PASS] Addr=0x5 | Exp=0x107b | Act=0x107b
 # [3615] [SCB WRITE] Addr=0x4 <= Data=0xd177
 # Driver
 # Monitor
-# [3625] [SCB READ REQ] Addr=0x8 Queued
+# [3625] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3635] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3635] [SCB WRITE] Addr=0xf <= Data=0x47d3
 # Driver
 # Monitor
-# [3645] [SCB READ REQ] Addr=0xd Queued
+# [3645] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # Driver
 # Monitor
-# [3655] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # [3655] [SCB WRITE] Addr=0x7 <= Data=0xb722
 # Driver
 # Monitor
-# [3665] [SCB READ REQ] Addr=0xb Queued
+# [3665] [SCB PASS] Addr=0xb | Exp=0x6407 | Act=0x6407
 # Driver
 # Monitor
-# [3675] [SCB PASS] Addr=0xb | Exp=0x6407 | Act=0x6407
 # [3675] [SCB WRITE] Addr=0x1 <= Data=0xc588
 # Driver
 # Monitor
-# [3685] [SCB READ REQ] Addr=0x4 Queued
+# [3685] [SCB PASS] Addr=0x4 | Exp=0xd177 | Act=0xd177
 # Driver
 # Monitor
-# [3695] [SCB PASS] Addr=0x4 | Exp=0xd177 | Act=0xd177
 # [3695] [SCB WRITE] Addr=0x4 <= Data=0xbc49
 # Driver
 # Monitor
-# [3705] [SCB READ REQ] Addr=0x4 Queued
+# [3705] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # Driver
 # Monitor
-# [3715] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # [3715] [SCB WRITE] Addr=0xa <= Data=0xf18b
 # Driver
 # Monitor
-# [3725] [SCB READ REQ] Addr=0xd Queued
+# [3725] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # Driver
 # Monitor
-# [3735] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # [3735] [SCB WRITE] Addr=0x2 <= Data=0xe2b6
 # Driver
 # Monitor
-# [3745] [SCB READ REQ] Addr=0xd Queued
+# [3745] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # Driver
 # Monitor
-# [3755] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # [3755] [SCB WRITE] Addr=0x2 <= Data=0xcff0
 # Driver
 # Monitor
-# [3765] [SCB READ REQ] Addr=0xd Queued
+# [3765] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # Driver
 # Monitor
-# [3775] [SCB PASS] Addr=0xd | Exp=0x64be | Act=0x64be
 # [3775] [SCB WRITE] Addr=0xc <= Data=0x363c
 # Driver
 # Monitor
-# [3785] [SCB READ REQ] Addr=0xa Queued
+# [3785] [SCB PASS] Addr=0xa | Exp=0xf18b | Act=0xf18b
 # Driver
 # Monitor
-# [3795] [SCB PASS] Addr=0xa | Exp=0xf18b | Act=0xf18b
 # [3795] [SCB WRITE] Addr=0x2 <= Data=0x9088
 # Driver
 # Monitor
-# [3805] [SCB READ REQ] Addr=0x8 Queued
+# [3805] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3815] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3815] [SCB WRITE] Addr=0xa <= Data=0x990a
 # Driver
 # Monitor
-# [3825] [SCB READ REQ] Addr=0xa Queued
+# [3825] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # Driver
 # Monitor
-# [3835] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # [3835] [SCB WRITE] Addr=0x5 <= Data=0x3a2f
 # Driver
 # Monitor
-# [3845] [SCB READ REQ] Addr=0x1 Queued
+# [3845] [SCB PASS] Addr=0x1 | Exp=0xc588 | Act=0xc588
 # Driver
 # Monitor
-# [3855] [SCB PASS] Addr=0x1 | Exp=0xc588 | Act=0xc588
 # [3855] [SCB WRITE] Addr=0xc <= Data=0xc7fc
 # Driver
 # Monitor
-# [3865] [SCB READ REQ] Addr=0xa Queued
+# [3865] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # Driver
 # Monitor
-# [3875] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # [3875] [SCB WRITE] Addr=0x3 <= Data=0xf785
 # Driver
 # Monitor
-# [3885] [SCB READ REQ] Addr=0x8 Queued
+# [3885] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [3895] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [3895] [SCB WRITE] Addr=0x2 <= Data=0x673e
 # Driver
 # Monitor
-# [3905] [SCB READ REQ] Addr=0x5 Queued
+# [3905] [SCB PASS] Addr=0x5 | Exp=0x3a2f | Act=0x3a2f
 # Driver
 # Monitor
-# [3915] [SCB PASS] Addr=0x5 | Exp=0x3a2f | Act=0x3a2f
 # [3915] [SCB WRITE] Addr=0xb <= Data=0xf515
 # Driver
 # Monitor
-# [3925] [SCB READ REQ] Addr=0xf Queued
+# [3925] [SCB PASS] Addr=0xf | Exp=0x47d3 | Act=0x47d3
 # Driver
 # Monitor
-# [3935] [SCB PASS] Addr=0xf | Exp=0x47d3 | Act=0x47d3
 # [3935] [SCB WRITE] Addr=0x9 <= Data=0xc6a
 # Driver
 # Monitor
-# [3945] [SCB READ REQ] Addr=0x1 Queued
+# [3945] [SCB PASS] Addr=0x1 | Exp=0xc588 | Act=0xc588
 # Driver
 # Monitor
-# [3955] [SCB PASS] Addr=0x1 | Exp=0xc588 | Act=0xc588
 # [3955] [SCB WRITE] Addr=0xf <= Data=0x3981
 # Driver
 # Monitor
-# [3965] [SCB READ REQ] Addr=0x2 Queued
+# [3965] [SCB PASS] Addr=0x2 | Exp=0x673e | Act=0x673e
 # Driver
 # Monitor
-# [3975] [SCB PASS] Addr=0x2 | Exp=0x673e | Act=0x673e
 # [3975] [SCB WRITE] Addr=0xc <= Data=0x9700
 # Driver
 # Monitor
-# [3985] [SCB READ REQ] Addr=0xa Queued
+# [3985] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # Driver
 # Monitor
-# [3995] [SCB PASS] Addr=0xa | Exp=0x990a | Act=0x990a
 # [3995] [SCB WRITE] Addr=0xb <= Data=0x9584
 # Driver
 # Monitor
-# [4005] [SCB READ REQ] Addr=0x8 Queued
+# [4005] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # Driver
 # Monitor
-# [4015] [SCB PASS] Addr=0x8 | Exp=0x43e4 | Act=0x43e4
 # [4015] [SCB WRITE] Addr=0x8 <= Data=0xaaa7
 # Driver
 # Monitor
-# [4025] [SCB READ REQ] Addr=0x4 Queued
+# [4025] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # Driver
 # Monitor
-# [4035] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # [4035] [SCB WRITE] Addr=0xc <= Data=0xa339
 # Driver
 # Monitor
-# [4045] [SCB READ REQ] Addr=0x2 Queued
+# [4045] [SCB PASS] Addr=0x2 | Exp=0x673e | Act=0x673e
 # Driver
 # Monitor
-# [4055] [SCB PASS] Addr=0x2 | Exp=0x673e | Act=0x673e
 # [4055] [SCB WRITE] Addr=0x7 <= Data=0x1d45
 # Driver
 # Monitor
-# [4065] [SCB READ REQ] Addr=0x9 Queued
+# [4065] [SCB PASS] Addr=0x9 | Exp=0xc6a | Act=0xc6a
 # Driver
 # Monitor
-# [4075] [SCB PASS] Addr=0x9 | Exp=0xc6a | Act=0xc6a
 # [4075] [SCB WRITE] Addr=0x1 <= Data=0x827a
 # Driver
 # Monitor
-# [4085] [SCB READ REQ] Addr=0x4 Queued
+# [4085] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # Driver
 # Monitor
-# [4095] [SCB PASS] Addr=0x4 | Exp=0xbc49 | Act=0xbc49
 # [4095] [SCB WRITE] Addr=0x0 <= Data=0x7ab9
 # Driver
 # Monitor
@@ -1962,68 +1766,54 @@
 # [4245] [SCB WRITE] Addr=0xf <= Data=0xbb50
 # Driver
 # Monitor
-# [4255] [SCB READ REQ] Addr=0x0 Queued
+# [4255] [SCB PASS] Addr=0x0 | Exp=0x7ab9 | Act=0x7ab9
 # Driver
 # Monitor
-# [4265] [SCB PASS] Addr=0x0 | Exp=0x7ab9 | Act=0x7ab9
-# [4265] [SCB READ REQ] Addr=0x1 Queued
+# [4265] [SCB PASS] Addr=0x1 | Exp=0xcd37 | Act=0xcd37
 # Driver
 # Monitor
-# [4275] [SCB PASS] Addr=0x1 | Exp=0xcd37 | Act=0xcd37
-# [4275] [SCB READ REQ] Addr=0x2 Queued
+# [4275] [SCB PASS] Addr=0x2 | Exp=0xa499 | Act=0xa499
 # Driver
 # Monitor
-# [4285] [SCB PASS] Addr=0x2 | Exp=0xa499 | Act=0xa499
-# [4285] [SCB READ REQ] Addr=0x3 Queued
+# [4285] [SCB PASS] Addr=0x3 | Exp=0xaea3 | Act=0xaea3
 # Driver
 # Monitor
-# [4295] [SCB PASS] Addr=0x3 | Exp=0xaea3 | Act=0xaea3
-# [4295] [SCB READ REQ] Addr=0x4 Queued
+# [4295] [SCB PASS] Addr=0x4 | Exp=0xd164 | Act=0xd164
 # Driver
 # Monitor
-# [4305] [SCB PASS] Addr=0x4 | Exp=0xd164 | Act=0xd164
-# [4305] [SCB READ REQ] Addr=0x5 Queued
+# [4305] [SCB PASS] Addr=0x5 | Exp=0x4f65 | Act=0x4f65
 # Driver
 # Monitor
-# [4315] [SCB PASS] Addr=0x5 | Exp=0x4f65 | Act=0x4f65
-# [4315] [SCB READ REQ] Addr=0x6 Queued
+# [4315] [SCB PASS] Addr=0x6 | Exp=0xb22e | Act=0xb22e
 # Driver
 # Monitor
-# [4325] [SCB PASS] Addr=0x6 | Exp=0xb22e | Act=0xb22e
-# [4325] [SCB READ REQ] Addr=0x7 Queued
+# [4325] [SCB PASS] Addr=0x7 | Exp=0x834 | Act=0x834
 # Driver
 # Monitor
-# [4335] [SCB PASS] Addr=0x7 | Exp=0x834 | Act=0x834
-# [4335] [SCB READ REQ] Addr=0x8 Queued
+# [4335] [SCB PASS] Addr=0x8 | Exp=0x8038 | Act=0x8038
 # Driver
 # Monitor
-# [4345] [SCB PASS] Addr=0x8 | Exp=0x8038 | Act=0x8038
-# [4345] [SCB READ REQ] Addr=0x9 Queued
+# [4345] [SCB PASS] Addr=0x9 | Exp=0x2b0f | Act=0x2b0f
 # Driver
 # Monitor
-# [4355] [SCB PASS] Addr=0x9 | Exp=0x2b0f | Act=0x2b0f
-# [4355] [SCB READ REQ] Addr=0xa Queued
+# [4355] [SCB PASS] Addr=0xa | Exp=0xe1a8 | Act=0xe1a8
 # Driver
 # Monitor
-# [4365] [SCB PASS] Addr=0xa | Exp=0xe1a8 | Act=0xe1a8
-# [4365] [SCB READ REQ] Addr=0xb Queued
+# [4365] [SCB PASS] Addr=0xb | Exp=0x8212 | Act=0x8212
 # Driver
 # Monitor
-# [4375] [SCB PASS] Addr=0xb | Exp=0x8212 | Act=0x8212
-# [4375] [SCB READ REQ] Addr=0xc Queued
+# [4375] [SCB PASS] Addr=0xc | Exp=0x6d7c | Act=0x6d7c
 # Driver
 # Monitor
-# [4385] [SCB PASS] Addr=0xc | Exp=0x6d7c | Act=0x6d7c
-# [4385] [SCB READ REQ] Addr=0xd Queued
+# [4385] [SCB PASS] Addr=0xd | Exp=0x66e | Act=0x66e
 # Monitor
-# [4395] [SCB PASS] Addr=0xd | Exp=0x66e | Act=0x66e
-# [4395] [SCB READ REQ] Addr=0xe Queued
+# [4395] [SCB PASS] Addr=0xe | Exp=0xe16a | Act=0xe16a
 # Monitor
 # 
 # ==================================================
 #                SCOREBOARD SUMMARY                 
 # ==================================================
-#  Passes : 434
+#  Passes : 435
 #  Errors  : 0
 # ==================================================
 # ** Note: $finish    : tb/top.sv(39)
@@ -2093,8 +1883,8 @@
 #         covered/total bins:                                 2          2          -                      
 #         missing/total bins:                                 0          2          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           217          1          -    Covered              
-#         bin zero                                          222          1          -    Covered              
+#         bin one                                           220          1          -    Covered              
+#         bin zero                                          220          1          -    Covered              
 #     Coverpoint cp_address                             100.00%        100          -    Covered              
 #         covered/total bins:                                16         16          -                      
 #         missing/total bins:                                 0         16          -                      
@@ -2238,8 +2028,8 @@
 #         covered/total bins:                                 2          2          -                      
 #         missing/total bins:                                 0          2          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           217          1          -    Covered              
-#         bin zero                                          222          1          -    Covered              
+#         bin one                                           220          1          -    Covered              
+#         bin zero                                          220          1          -    Covered              
 #     Coverpoint cp_address                             100.00%        100          -    Covered              
 #         covered/total bins:                                16         16          -                      
 #         missing/total bins:                                 0         16          -                      
@@ -2335,5 +2125,5 @@
 # Total Coverage By Instance (filtered view): 100.00%
 # 
 # 
-# End time: 23:44:40 on Aug 22,2026, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 1
+# End time: 23:55:19 on Aug 22,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 5

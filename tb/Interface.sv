@@ -14,8 +14,8 @@ interface intf (
   output data_in, address, enable; 
   endclocking
 
-  clocking mcb @(posedge clk);
-  default input #1step output #1ns;
+  clocking mcb @(posedge clk); //**********************************************
+  default input #0 output #1ns; //#0 to sample in OBSERVED REGION AFTER NBA (VIM)
   input data_in, address, enable, rst_n, data_out, valid_out;
   endclocking
 

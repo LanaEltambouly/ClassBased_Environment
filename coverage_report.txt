@@ -61,8 +61,8 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           217          1          -    Covered              
-        bin zero                                          222          1          -    Covered              
+        bin one                                           220          1          -    Covered              
+        bin zero                                          220          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
@@ -206,8 +206,8 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           217          1          -    Covered              
-        bin zero                                          222          1          -    Covered              
+        bin one                                           220          1          -    Covered              
+        bin zero                                          220          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
