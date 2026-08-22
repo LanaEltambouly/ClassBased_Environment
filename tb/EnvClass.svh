@@ -35,6 +35,7 @@ class environment;  //env between all classes
   task waitttt();
     wait(drv.items != 0 && seq.tx_count == drv.items);
     repeat(2) @(vif.mcb);
+    disable fork;
   endtask
 
 endclass
