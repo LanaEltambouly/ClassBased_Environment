@@ -36,6 +36,6 @@ module top;
 
     env.waitttt();
     env.scb.report();
-    $finish;
+    $stop; //******* USE STOP not FINISH 3LSHAN EL REPORT YTLA33 
   end
   endmodule 

@@ -1,7 +1,6 @@
 vlib work
 vlog -sv +cover tb/package.sv tb/Interface.sv RTL/Memory_DUT.sv tb/top.sv
 vsim -c -voptargs=+acc -coverage top
-onfinish stop
 add wave *
 run -all
 coverage report -detail -cvg -directive
