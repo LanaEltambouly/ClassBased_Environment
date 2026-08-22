@@ -9,6 +9,7 @@ package pckg;
   `include "DriverClass.svh"
   `include "MonitorClass.svh"
   `include "ScoreboardClass.svh"
+  `include "SubscriberClass.svh"
   `include "EnvClass.svh"
 
 endpackage

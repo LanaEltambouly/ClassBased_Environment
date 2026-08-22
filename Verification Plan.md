@@ -1,4 +1,5 @@
 # Verification Plan
+
 # Synchronous Memory IP 16 x 32
 
 ## Introduction
@@ -44,14 +45,24 @@ Self-checking, combining directed tests for the specific reset behavior with con
 
 ## Traceability Matrix 
 
-| TC\_ID | Enable | Reset | valid\_out |
-| :---- | ----- | ----- | :---- |
-| TC\_01 |  | yes |  |
-| TC\_02 | yes | yes |  |
-| TC\_03 | yes | yes | yes |
-| TC\_04 | yes | yes | yes |
-| TC\_05 | yes | yes | yes |
-| TC\_06 | yes | yes | yes |
+| TC\_ID | Reset | Enable | address | data\_in | data\_out | valid\_out |
+| :---- | :---: | :---: | :---: | :---: | :---: | :---: |
+| TC\_01 | yes |  |  |  | yes | yes |
+| TC\_02 | yes | yes | yes | yes |  |  |
+| TC\_03 | yes | yes | yes |  | yes | yes |
+| TC\_04 | yes | yes | yes | yes | yes | yes |
+| TC\_05 | yes | yes | yes | yes | yes | yes |
+| TC\_06 | yes | yes | yes | yes | yes | yes |
+
+## Functional Coverage Groups
+
+| Coverage Point | Bins |
+| :---- | :---: |
+| enable | {0,1} |
+| reset | {0,1} |
+| address | \[0:2^4\] |
+| valid out  | {0,1} |
+| enable with address  | enable \* address |
 
 ## Exit Criteria 
 
@@ -60,7 +71,7 @@ Self-checking, combining directed tests for the specific reset behavior with con
 * Functional coverage for all ports and internal signals  
 * No linting issues 
 
-## Coverage results
+## 
 
 ## Opened issues
 

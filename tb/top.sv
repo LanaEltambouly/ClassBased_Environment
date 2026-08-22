@@ -27,14 +27,12 @@ module top;
     bnd_seq = new(env.seq);
     tgl_seq = new(env.seq);
     swp_seq = new(env.seq);
-
     
     rst_seq.run();
     wbr_seq.run();
     bnd_seq.run();
     tgl_seq.run();
     swp_seq.run();
-    
 
     env.waitttt();
     env.scb.report();

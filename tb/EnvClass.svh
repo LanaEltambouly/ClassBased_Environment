@@ -4,6 +4,7 @@ class environment;  //env between all classes
   driver drv;
   monitor mon;
   scoreboard scb;
+  subscriber sub;
 
   virtual intf vif;
 
@@ -21,6 +22,7 @@ class environment;  //env between all classes
     drv = new(vif, seq2drv_mbx);
     mon = new(vif, mon2scb_mbx, mon2sub_mbx);
     scb = new(mon2scb_mbx);
+    sub = new(mon2sub_mbx);
   endfunction
 
   task run();
@@ -29,6 +31,7 @@ class environment;  //env between all classes
       drv.run();
       mon.run();
       scb.run();
+      sub.run();
     join_none
   endtask
 

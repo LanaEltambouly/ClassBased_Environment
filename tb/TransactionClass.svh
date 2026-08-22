@@ -18,13 +18,14 @@ class transaction;
   endfunction
 
   //constraints while randomization s
-  constraint reset_distribution {
+   constraint reset_distribution {
         rst_n dist {0:/10, 1:/90};
-    }
+    } 
 
   //Deep Copy 
   function transaction copy();
     transaction copy_tx = new();
+    copy_tx.rst_n = this.rst_n;
     copy_tx.data_in = this.data_in;
     copy_tx.address = this.address;
     copy_tx.enable = this.enable;
