@@ -6,21 +6,21 @@ Coverage Report by instance with details
 =================================================================================
 
 Covergroup Coverage:
-    Covergroups                      1        na        na    95.00%
+    Covergroups                      1        na        na   100.00%
         Coverpoints/Crosses          5        na        na        na
-            Covergroup Bins         90        89         1    98.88%
+            Covergroup Bins         90        90         0   100.00%
 ----------------------------------------------------------------------------------------------------------
 Covergroup                                             Metric       Goal       Bins    Status               
                                                                                                          
 ----------------------------------------------------------------------------------------------------------
- TYPE /pckg/subscriber/cg_mem                          95.00%        100          -    Uncovered            
-    covered/total bins:                                    89         90          -                      
-    missing/total bins:                                     1         90          -                      
-    % Hit:                                             98.88%        100          -                      
-    Coverpoint cp_rst_n                                75.00%        100          -    Uncovered            
-        covered/total bins:                                 3          4          -                      
-        missing/total bins:                                 1          4          -                      
-        % Hit:                                         75.00%        100          -                      
+ TYPE /pckg/subscriber/cg_mem                         100.00%        100          -    Covered              
+    covered/total bins:                                    90         90          -                      
+    missing/total bins:                                     0         90          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_rst_n                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
     Coverpoint cp_enable                              100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -37,135 +37,135 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                64         64          -                      
         missing/total bins:                                 0         64          -                      
         % Hit:                                        100.00%        100          -                      
- Covergroup instance \/pckg::subscriber::cg_mem        95.00%        100          -    Uncovered            
-    covered/total bins:                                    89         90          -                      
-    missing/total bins:                                     1         90          -                      
-    % Hit:                                             98.88%        100          -                      
-    Coverpoint cp_rst_n                                75.00%        100          -    Uncovered            
-        covered/total bins:                                 3          4          -                      
-        missing/total bins:                                 1          4          -                      
-        % Hit:                                         75.00%        100          -                      
-        bin zero                                            1          1          -    Covered              
-        bin one                                           438          1          -    Covered              
-        bin one_zero                                        0          1          -    ZERO                 
-        bin zero_one                                        1          1          -    Covered              
+ Covergroup instance \/pckg::subscriber::cg_mem       100.00%        100          -    Covered              
+    covered/total bins:                                    90         90          -                      
+    missing/total bins:                                     0         90          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_rst_n                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            3          1          -    Covered              
+        bin one                                           437          1          -    Covered              
+        bin one_zero                                        1          1          -    Covered              
+        bin zero_one                                        2          1          -    Covered              
     Coverpoint cp_enable                              100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
         bin one                                           218          1          -    Covered              
-        bin zero                                          221          1          -    Covered              
+        bin zero                                          222          1          -    Covered              
         bin one_zero                                      203          1          -    Covered              
         bin zero_one                                      203          1          -    Covered              
     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           219          1          -    Covered              
-        bin zero                                          219          1          -    Covered              
+        bin one                                           217          1          -    Covered              
+        bin zero                                          222          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
         % Hit:                                        100.00%        100          -                      
-        bin mini                                           47          1          -    Covered              
-        bin max                                            31          1          -    Covered              
-        bin inbetween[1]                                   30          1          -    Covered              
-        bin inbetween[2]                                   26          1          -    Covered              
-        bin inbetween[3]                                   40          1          -    Covered              
-        bin inbetween[4]                                   25          1          -    Covered              
-        bin inbetween[5]                                   12          1          -    Covered              
-        bin inbetween[6]                                   34          1          -    Covered              
-        bin inbetween[7]                                   18          1          -    Covered              
-        bin inbetween[8]                                   22          1          -    Covered              
-        bin inbetween[9]                                   27          1          -    Covered              
-        bin inbetween[10]                                  18          1          -    Covered              
-        bin inbetween[11]                                  29          1          -    Covered              
-        bin inbetween[12]                                  23          1          -    Covered              
-        bin inbetween[13]                                  27          1          -    Covered              
-        bin inbetween[14]                                  30          1          -    Covered              
+        bin mini                                           29          1          -    Covered              
+        bin max                                            36          1          -    Covered              
+        bin inbetween[1]                                   27          1          -    Covered              
+        bin inbetween[2]                                   34          1          -    Covered              
+        bin inbetween[3]                                   30          1          -    Covered              
+        bin inbetween[4]                                   33          1          -    Covered              
+        bin inbetween[5]                                   16          1          -    Covered              
+        bin inbetween[6]                                   20          1          -    Covered              
+        bin inbetween[7]                                   10          1          -    Covered              
+        bin inbetween[8]                                   40          1          -    Covered              
+        bin inbetween[9]                                   15          1          -    Covered              
+        bin inbetween[10]                                  34          1          -    Covered              
+        bin inbetween[11]                                  38          1          -    Covered              
+        bin inbetween[12]                                  19          1          -    Covered              
+        bin inbetween[13]                                  34          1          -    Covered              
+        bin inbetween[14]                                  25          1          -    Covered              
     Cross cp_enable_address                           100.00%        100          -    Covered              
         covered/total bins:                                64         64          -                      
         missing/total bins:                                 0         64          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin <zero_one,inbetween[14]>                   14          1          -    Covered              
-            bin <zero_one,inbetween[13]>                   13          1          -    Covered              
-            bin <zero_one,inbetween[12]>                   14          1          -    Covered              
-            bin <zero_one,inbetween[11]>                   12          1          -    Covered              
-            bin <zero_one,inbetween[10]>                   11          1          -    Covered              
-            bin <zero_one,inbetween[9]>                    11          1          -    Covered              
-            bin <zero_one,inbetween[8]>                    11          1          -    Covered              
-            bin <zero_one,inbetween[7]>                     6          1          -    Covered              
-            bin <zero_one,inbetween[6]>                    13          1          -    Covered              
-            bin <zero_one,inbetween[5]>                     6          1          -    Covered              
-            bin <zero_one,inbetween[4]>                    12          1          -    Covered              
-            bin <zero_one,inbetween[3]>                    20          1          -    Covered              
-            bin <zero_one,inbetween[2]>                    12          1          -    Covered              
-            bin <zero_one,inbetween[1]>                    12          1          -    Covered              
-            bin <one_zero,inbetween[14]>                   14          1          -    Covered              
-            bin <one_zero,inbetween[13]>                   12          1          -    Covered              
-            bin <one_zero,inbetween[12]>                    7          1          -    Covered              
-            bin <one_zero,inbetween[11]>                   15          1          -    Covered              
-            bin <one_zero,inbetween[10]>                    5          1          -    Covered              
-            bin <one_zero,inbetween[9]>                    14          1          -    Covered              
-            bin <one_zero,inbetween[8]>                     9          1          -    Covered              
-            bin <one_zero,inbetween[7]>                    10          1          -    Covered              
-            bin <one_zero,inbetween[6]>                    19          1          -    Covered              
-            bin <one_zero,inbetween[5]>                     4          1          -    Covered              
-            bin <one_zero,inbetween[4]>                    11          1          -    Covered              
-            bin <one_zero,inbetween[3]>                    18          1          -    Covered              
-            bin <one_zero,inbetween[2]>                    12          1          -    Covered              
-            bin <one_zero,inbetween[1]>                    16          1          -    Covered              
-            bin <zero,inbetween[14]>                       15          1          -    Covered              
-            bin <zero,inbetween[13]>                       13          1          -    Covered              
-            bin <zero,inbetween[12]>                        8          1          -    Covered              
-            bin <zero,inbetween[11]>                       16          1          -    Covered              
-            bin <zero,inbetween[10]>                        6          1          -    Covered              
-            bin <zero,inbetween[9]>                        15          1          -    Covered              
-            bin <zero,inbetween[8]>                        10          1          -    Covered              
-            bin <zero,inbetween[7]>                        11          1          -    Covered              
-            bin <zero,inbetween[6]>                        20          1          -    Covered              
-            bin <zero,inbetween[5]>                         5          1          -    Covered              
-            bin <zero,inbetween[4]>                        12          1          -    Covered              
-            bin <zero,inbetween[3]>                        19          1          -    Covered              
-            bin <zero,inbetween[2]>                        13          1          -    Covered              
-            bin <zero,inbetween[1]>                        17          1          -    Covered              
-            bin <one,inbetween[14]>                        15          1          -    Covered              
-            bin <one,inbetween[13]>                        14          1          -    Covered              
-            bin <one,inbetween[12]>                        15          1          -    Covered              
-            bin <one,inbetween[11]>                        13          1          -    Covered              
-            bin <one,inbetween[10]>                        12          1          -    Covered              
-            bin <one,inbetween[9]>                         12          1          -    Covered              
-            bin <one,inbetween[8]>                         12          1          -    Covered              
-            bin <one,inbetween[7]>                          7          1          -    Covered              
-            bin <one,inbetween[6]>                         14          1          -    Covered              
-            bin <one,inbetween[5]>                          7          1          -    Covered              
-            bin <one,inbetween[4]>                         13          1          -    Covered              
-            bin <one,inbetween[3]>                         21          1          -    Covered              
-            bin <one,inbetween[2]>                         13          1          -    Covered              
-            bin <one,inbetween[1]>                         13          1          -    Covered              
-            bin <zero_one,max>                             15          1          -    Covered              
-            bin <one_zero,max>                             14          1          -    Covered              
-            bin <zero,max>                                 15          1          -    Covered              
-            bin <one,max>                                  16          1          -    Covered              
-            bin <zero_one,mini>                            21          1          -    Covered              
-            bin <one_zero,mini>                            23          1          -    Covered              
-            bin <zero,mini>                                26          1          -    Covered              
-            bin <one,mini>                                 21          1          -    Covered              
+            bin <zero_one,inbetween[14]>                   13          1          -    Covered              
+            bin <zero_one,inbetween[13]>                   15          1          -    Covered              
+            bin <zero_one,inbetween[12]>                   12          1          -    Covered              
+            bin <zero_one,inbetween[11]>                   16          1          -    Covered              
+            bin <zero_one,inbetween[10]>                   16          1          -    Covered              
+            bin <zero_one,inbetween[9]>                     8          1          -    Covered              
+            bin <zero_one,inbetween[8]>                    14          1          -    Covered              
+            bin <zero_one,inbetween[7]>                     5          1          -    Covered              
+            bin <zero_one,inbetween[6]>                     9          1          -    Covered              
+            bin <zero_one,inbetween[5]>                     8          1          -    Covered              
+            bin <zero_one,inbetween[4]>                    11          1          -    Covered              
+            bin <zero_one,inbetween[3]>                    17          1          -    Covered              
+            bin <zero_one,inbetween[2]>                    18          1          -    Covered              
+            bin <zero_one,inbetween[1]>                    13          1          -    Covered              
+            bin <one_zero,inbetween[14]>                   10          1          -    Covered              
+            bin <one_zero,inbetween[13]>                   17          1          -    Covered              
+            bin <one_zero,inbetween[12]>                    5          1          -    Covered              
+            bin <one_zero,inbetween[11]>                   20          1          -    Covered              
+            bin <one_zero,inbetween[10]>                   16          1          -    Covered              
+            bin <one_zero,inbetween[9]>                     5          1          -    Covered              
+            bin <one_zero,inbetween[8]>                    24          1          -    Covered              
+            bin <one_zero,inbetween[7]>                     3          1          -    Covered              
+            bin <one_zero,inbetween[6]>                     9          1          -    Covered              
+            bin <one_zero,inbetween[5]>                     6          1          -    Covered              
+            bin <one_zero,inbetween[4]>                    20          1          -    Covered              
+            bin <one_zero,inbetween[3]>                    11          1          -    Covered              
+            bin <one_zero,inbetween[2]>                    14          1          -    Covered              
+            bin <one_zero,inbetween[1]>                    12          1          -    Covered              
+            bin <zero,inbetween[14]>                       11          1          -    Covered              
+            bin <zero,inbetween[13]>                       18          1          -    Covered              
+            bin <zero,inbetween[12]>                        6          1          -    Covered              
+            bin <zero,inbetween[11]>                       21          1          -    Covered              
+            bin <zero,inbetween[10]>                       17          1          -    Covered              
+            bin <zero,inbetween[9]>                         6          1          -    Covered              
+            bin <zero,inbetween[8]>                        25          1          -    Covered              
+            bin <zero,inbetween[7]>                         4          1          -    Covered              
+            bin <zero,inbetween[6]>                        10          1          -    Covered              
+            bin <zero,inbetween[5]>                         7          1          -    Covered              
+            bin <zero,inbetween[4]>                        21          1          -    Covered              
+            bin <zero,inbetween[3]>                        12          1          -    Covered              
+            bin <zero,inbetween[2]>                        15          1          -    Covered              
+            bin <zero,inbetween[1]>                        13          1          -    Covered              
+            bin <one,inbetween[14]>                        14          1          -    Covered              
+            bin <one,inbetween[13]>                        16          1          -    Covered              
+            bin <one,inbetween[12]>                        13          1          -    Covered              
+            bin <one,inbetween[11]>                        17          1          -    Covered              
+            bin <one,inbetween[10]>                        17          1          -    Covered              
+            bin <one,inbetween[9]>                          9          1          -    Covered              
+            bin <one,inbetween[8]>                         15          1          -    Covered              
+            bin <one,inbetween[7]>                          6          1          -    Covered              
+            bin <one,inbetween[6]>                         10          1          -    Covered              
+            bin <one,inbetween[5]>                          9          1          -    Covered              
+            bin <one,inbetween[4]>                         12          1          -    Covered              
+            bin <one,inbetween[3]>                         18          1          -    Covered              
+            bin <one,inbetween[2]>                         19          1          -    Covered              
+            bin <one,inbetween[1]>                         14          1          -    Covered              
+            bin <zero_one,max>                             16          1          -    Covered              
+            bin <one_zero,max>                             19          1          -    Covered              
+            bin <zero,max>                                 19          1          -    Covered              
+            bin <one,max>                                  17          1          -    Covered              
+            bin <zero_one,mini>                            12          1          -    Covered              
+            bin <one_zero,mini>                            12          1          -    Covered              
+            bin <zero,mini>                                17          1          -    Covered              
+            bin <one,mini>                                 12          1          -    Covered              
 
 COVERGROUP COVERAGE:
 ----------------------------------------------------------------------------------------------------------
 Covergroup                                             Metric       Goal       Bins    Status               
                                                                                                          
 ----------------------------------------------------------------------------------------------------------
- TYPE /pckg/subscriber/cg_mem                          95.00%        100          -    Uncovered            
-    covered/total bins:                                    89         90          -                      
-    missing/total bins:                                     1         90          -                      
-    % Hit:                                             98.88%        100          -                      
-    Coverpoint cp_rst_n                                75.00%        100          -    Uncovered            
-        covered/total bins:                                 3          4          -                      
-        missing/total bins:                                 1          4          -                      
-        % Hit:                                         75.00%        100          -                      
+ TYPE /pckg/subscriber/cg_mem                         100.00%        100          -    Covered              
+    covered/total bins:                                    90         90          -                      
+    missing/total bins:                                     0         90          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_rst_n                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
     Coverpoint cp_enable                              100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
@@ -182,123 +182,123 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                64         64          -                      
         missing/total bins:                                 0         64          -                      
         % Hit:                                        100.00%        100          -                      
- Covergroup instance \/pckg::subscriber::cg_mem        95.00%        100          -    Uncovered            
-    covered/total bins:                                    89         90          -                      
-    missing/total bins:                                     1         90          -                      
-    % Hit:                                             98.88%        100          -                      
-    Coverpoint cp_rst_n                                75.00%        100          -    Uncovered            
-        covered/total bins:                                 3          4          -                      
-        missing/total bins:                                 1          4          -                      
-        % Hit:                                         75.00%        100          -                      
-        bin zero                                            1          1          -    Covered              
-        bin one                                           438          1          -    Covered              
-        bin one_zero                                        0          1          -    ZERO                 
-        bin zero_one                                        1          1          -    Covered              
+ Covergroup instance \/pckg::subscriber::cg_mem       100.00%        100          -    Covered              
+    covered/total bins:                                    90         90          -                      
+    missing/total bins:                                     0         90          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_rst_n                               100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                            3          1          -    Covered              
+        bin one                                           437          1          -    Covered              
+        bin one_zero                                        1          1          -    Covered              
+        bin zero_one                                        2          1          -    Covered              
     Coverpoint cp_enable                              100.00%        100          -    Covered              
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
         bin one                                           218          1          -    Covered              
-        bin zero                                          221          1          -    Covered              
+        bin zero                                          222          1          -    Covered              
         bin one_zero                                      203          1          -    Covered              
         bin zero_one                                      203          1          -    Covered              
     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           219          1          -    Covered              
-        bin zero                                          219          1          -    Covered              
+        bin one                                           217          1          -    Covered              
+        bin zero                                          222          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
         % Hit:                                        100.00%        100          -                      
-        bin mini                                           47          1          -    Covered              
-        bin max                                            31          1          -    Covered              
-        bin inbetween[1]                                   30          1          -    Covered              
-        bin inbetween[2]                                   26          1          -    Covered              
-        bin inbetween[3]                                   40          1          -    Covered              
-        bin inbetween[4]                                   25          1          -    Covered              
-        bin inbetween[5]                                   12          1          -    Covered              
-        bin inbetween[6]                                   34          1          -    Covered              
-        bin inbetween[7]                                   18          1          -    Covered              
-        bin inbetween[8]                                   22          1          -    Covered              
-        bin inbetween[9]                                   27          1          -    Covered              
-        bin inbetween[10]                                  18          1          -    Covered              
-        bin inbetween[11]                                  29          1          -    Covered              
-        bin inbetween[12]                                  23          1          -    Covered              
-        bin inbetween[13]                                  27          1          -    Covered              
-        bin inbetween[14]                                  30          1          -    Covered              
+        bin mini                                           29          1          -    Covered              
+        bin max                                            36          1          -    Covered              
+        bin inbetween[1]                                   27          1          -    Covered              
+        bin inbetween[2]                                   34          1          -    Covered              
+        bin inbetween[3]                                   30          1          -    Covered              
+        bin inbetween[4]                                   33          1          -    Covered              
+        bin inbetween[5]                                   16          1          -    Covered              
+        bin inbetween[6]                                   20          1          -    Covered              
+        bin inbetween[7]                                   10          1          -    Covered              
+        bin inbetween[8]                                   40          1          -    Covered              
+        bin inbetween[9]                                   15          1          -    Covered              
+        bin inbetween[10]                                  34          1          -    Covered              
+        bin inbetween[11]                                  38          1          -    Covered              
+        bin inbetween[12]                                  19          1          -    Covered              
+        bin inbetween[13]                                  34          1          -    Covered              
+        bin inbetween[14]                                  25          1          -    Covered              
     Cross cp_enable_address                           100.00%        100          -    Covered              
         covered/total bins:                                64         64          -                      
         missing/total bins:                                 0         64          -                      
         % Hit:                                        100.00%        100          -                      
         Auto, Default and User Defined Bins:
-            bin <zero_one,inbetween[14]>                   14          1          -    Covered              
-            bin <zero_one,inbetween[13]>                   13          1          -    Covered              
-            bin <zero_one,inbetween[12]>                   14          1          -    Covered              
-            bin <zero_one,inbetween[11]>                   12          1          -    Covered              
-            bin <zero_one,inbetween[10]>                   11          1          -    Covered              
-            bin <zero_one,inbetween[9]>                    11          1          -    Covered              
-            bin <zero_one,inbetween[8]>                    11          1          -    Covered              
-            bin <zero_one,inbetween[7]>                     6          1          -    Covered              
-            bin <zero_one,inbetween[6]>                    13          1          -    Covered              
-            bin <zero_one,inbetween[5]>                     6          1          -    Covered              
-            bin <zero_one,inbetween[4]>                    12          1          -    Covered              
-            bin <zero_one,inbetween[3]>                    20          1          -    Covered              
-            bin <zero_one,inbetween[2]>                    12          1          -    Covered              
-            bin <zero_one,inbetween[1]>                    12          1          -    Covered              
-            bin <one_zero,inbetween[14]>                   14          1          -    Covered              
-            bin <one_zero,inbetween[13]>                   12          1          -    Covered              
-            bin <one_zero,inbetween[12]>                    7          1          -    Covered              
-            bin <one_zero,inbetween[11]>                   15          1          -    Covered              
-            bin <one_zero,inbetween[10]>                    5          1          -    Covered              
-            bin <one_zero,inbetween[9]>                    14          1          -    Covered              
-            bin <one_zero,inbetween[8]>                     9          1          -    Covered              
-            bin <one_zero,inbetween[7]>                    10          1          -    Covered              
-            bin <one_zero,inbetween[6]>                    19          1          -    Covered              
-            bin <one_zero,inbetween[5]>                     4          1          -    Covered              
-            bin <one_zero,inbetween[4]>                    11          1          -    Covered              
-            bin <one_zero,inbetween[3]>                    18          1          -    Covered              
-            bin <one_zero,inbetween[2]>                    12          1          -    Covered              
-            bin <one_zero,inbetween[1]>                    16          1          -    Covered              
-            bin <zero,inbetween[14]>                       15          1          -    Covered              
-            bin <zero,inbetween[13]>                       13          1          -    Covered              
-            bin <zero,inbetween[12]>                        8          1          -    Covered              
-            bin <zero,inbetween[11]>                       16          1          -    Covered              
-            bin <zero,inbetween[10]>                        6          1          -    Covered              
-            bin <zero,inbetween[9]>                        15          1          -    Covered              
-            bin <zero,inbetween[8]>                        10          1          -    Covered              
-            bin <zero,inbetween[7]>                        11          1          -    Covered              
-            bin <zero,inbetween[6]>                        20          1          -    Covered              
-            bin <zero,inbetween[5]>                         5          1          -    Covered              
-            bin <zero,inbetween[4]>                        12          1          -    Covered              
-            bin <zero,inbetween[3]>                        19          1          -    Covered              
-            bin <zero,inbetween[2]>                        13          1          -    Covered              
-            bin <zero,inbetween[1]>                        17          1          -    Covered              
-            bin <one,inbetween[14]>                        15          1          -    Covered              
-            bin <one,inbetween[13]>                        14          1          -    Covered              
-            bin <one,inbetween[12]>                        15          1          -    Covered              
-            bin <one,inbetween[11]>                        13          1          -    Covered              
-            bin <one,inbetween[10]>                        12          1          -    Covered              
-            bin <one,inbetween[9]>                         12          1          -    Covered              
-            bin <one,inbetween[8]>                         12          1          -    Covered              
-            bin <one,inbetween[7]>                          7          1          -    Covered              
-            bin <one,inbetween[6]>                         14          1          -    Covered              
-            bin <one,inbetween[5]>                          7          1          -    Covered              
-            bin <one,inbetween[4]>                         13          1          -    Covered              
-            bin <one,inbetween[3]>                         21          1          -    Covered              
-            bin <one,inbetween[2]>                         13          1          -    Covered              
-            bin <one,inbetween[1]>                         13          1          -    Covered              
-            bin <zero_one,max>                             15          1          -    Covered              
-            bin <one_zero,max>                             14          1          -    Covered              
-            bin <zero,max>                                 15          1          -    Covered              
-            bin <one,max>                                  16          1          -    Covered              
-            bin <zero_one,mini>                            21          1          -    Covered              
-            bin <one_zero,mini>                            23          1          -    Covered              
-            bin <zero,mini>                                26          1          -    Covered              
-            bin <one,mini>                                 21          1          -    Covered              
+            bin <zero_one,inbetween[14]>                   13          1          -    Covered              
+            bin <zero_one,inbetween[13]>                   15          1          -    Covered              
+            bin <zero_one,inbetween[12]>                   12          1          -    Covered              
+            bin <zero_one,inbetween[11]>                   16          1          -    Covered              
+            bin <zero_one,inbetween[10]>                   16          1          -    Covered              
+            bin <zero_one,inbetween[9]>                     8          1          -    Covered              
+            bin <zero_one,inbetween[8]>                    14          1          -    Covered              
+            bin <zero_one,inbetween[7]>                     5          1          -    Covered              
+            bin <zero_one,inbetween[6]>                     9          1          -    Covered              
+            bin <zero_one,inbetween[5]>                     8          1          -    Covered              
+            bin <zero_one,inbetween[4]>                    11          1          -    Covered              
+            bin <zero_one,inbetween[3]>                    17          1          -    Covered              
+            bin <zero_one,inbetween[2]>                    18          1          -    Covered              
+            bin <zero_one,inbetween[1]>                    13          1          -    Covered              
+            bin <one_zero,inbetween[14]>                   10          1          -    Covered              
+            bin <one_zero,inbetween[13]>                   17          1          -    Covered              
+            bin <one_zero,inbetween[12]>                    5          1          -    Covered              
+            bin <one_zero,inbetween[11]>                   20          1          -    Covered              
+            bin <one_zero,inbetween[10]>                   16          1          -    Covered              
+            bin <one_zero,inbetween[9]>                     5          1          -    Covered              
+            bin <one_zero,inbetween[8]>                    24          1          -    Covered              
+            bin <one_zero,inbetween[7]>                     3          1          -    Covered              
+            bin <one_zero,inbetween[6]>                     9          1          -    Covered              
+            bin <one_zero,inbetween[5]>                     6          1          -    Covered              
+            bin <one_zero,inbetween[4]>                    20          1          -    Covered              
+            bin <one_zero,inbetween[3]>                    11          1          -    Covered              
+            bin <one_zero,inbetween[2]>                    14          1          -    Covered              
+            bin <one_zero,inbetween[1]>                    12          1          -    Covered              
+            bin <zero,inbetween[14]>                       11          1          -    Covered              
+            bin <zero,inbetween[13]>                       18          1          -    Covered              
+            bin <zero,inbetween[12]>                        6          1          -    Covered              
+            bin <zero,inbetween[11]>                       21          1          -    Covered              
+            bin <zero,inbetween[10]>                       17          1          -    Covered              
+            bin <zero,inbetween[9]>                         6          1          -    Covered              
+            bin <zero,inbetween[8]>                        25          1          -    Covered              
+            bin <zero,inbetween[7]>                         4          1          -    Covered              
+            bin <zero,inbetween[6]>                        10          1          -    Covered              
+            bin <zero,inbetween[5]>                         7          1          -    Covered              
+            bin <zero,inbetween[4]>                        21          1          -    Covered              
+            bin <zero,inbetween[3]>                        12          1          -    Covered              
+            bin <zero,inbetween[2]>                        15          1          -    Covered              
+            bin <zero,inbetween[1]>                        13          1          -    Covered              
+            bin <one,inbetween[14]>                        14          1          -    Covered              
+            bin <one,inbetween[13]>                        16          1          -    Covered              
+            bin <one,inbetween[12]>                        13          1          -    Covered              
+            bin <one,inbetween[11]>                        17          1          -    Covered              
+            bin <one,inbetween[10]>                        17          1          -    Covered              
+            bin <one,inbetween[9]>                          9          1          -    Covered              
+            bin <one,inbetween[8]>                         15          1          -    Covered              
+            bin <one,inbetween[7]>                          6          1          -    Covered              
+            bin <one,inbetween[6]>                         10          1          -    Covered              
+            bin <one,inbetween[5]>                          9          1          -    Covered              
+            bin <one,inbetween[4]>                         12          1          -    Covered              
+            bin <one,inbetween[3]>                         18          1          -    Covered              
+            bin <one,inbetween[2]>                         19          1          -    Covered              
+            bin <one,inbetween[1]>                         14          1          -    Covered              
+            bin <zero_one,max>                             16          1          -    Covered              
+            bin <one_zero,max>                             19          1          -    Covered              
+            bin <zero,max>                                 19          1          -    Covered              
+            bin <one,max>                                  17          1          -    Covered              
+            bin <zero_one,mini>                            12          1          -    Covered              
+            bin <one_zero,mini>                            12          1          -    Covered              
+            bin <zero,mini>                                17          1          -    Covered              
+            bin <one,mini>                                 12          1          -    Covered              
 
-TOTAL COVERGROUP COVERAGE: 95.00%  COVERGROUP TYPES: 1
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
 
-Total Coverage By Instance (filtered view): 95.00%
+Total Coverage By Instance (filtered view): 100.00%
 

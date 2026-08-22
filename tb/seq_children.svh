@@ -35,6 +35,24 @@ class reset_seq extends base_sequence;
     tx.print();
     seqr.seq2drv_mbx.put(tx);
     seqr.tx_count++;
+
+    // RE Assert Reset
+    tx = new();
+    if (!tx.randomize() with { rst_n == 1'b0; enable == 1'b0; address == '0; data_in == '0; }) begin
+      $fatal(1, "[Reset Seq] Assert randomization failed!");
+    end
+    tx.print();
+    seqr.seq2drv_mbx.put(tx);
+    seqr.tx_count++;
+
+    // RE Deassert Reset
+    tx = new();
+    if (!tx.randomize() with { rst_n == 1'b1; enable == 1'b0; address == '0; data_in == '0; }) begin
+      $fatal(1, "[Reset Seq] Deassert randomization failed!");
+    end
+    tx.print();
+    seqr.seq2drv_mbx.put(tx);
+    seqr.tx_count++;
   endtask
 endclass
 

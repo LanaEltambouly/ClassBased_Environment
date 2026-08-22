@@ -15,7 +15,6 @@ class driver;
       if(seq2drv_mbx.try_get(tx)) begin 
       $display("Driver");
       items++;
-      
       // Drive stimulus
       @(vif.drv_cb);
       vif.rst_n <= tx.rst_n;

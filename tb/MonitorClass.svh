@@ -16,10 +16,6 @@ class monitor;
     forever begin
       @(vif.mcb);
 
-      if (!vif.mcb.rst_n) begin
-        continue;
-      end
-
       tx = new();
       $display("Monitor");
       
