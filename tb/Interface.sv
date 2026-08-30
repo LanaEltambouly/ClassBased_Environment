@@ -10,12 +10,12 @@ interface intf (
   logic valid_out;
 
   clocking drv_cb @(posedge clk); //driver's POV 
-  default input #1step output #1ns;
-  output data_in, address, enable; 
+  default input #1step output #1ns; //skew
+  output data_in, address, enable, rst_n; 
   endclocking
 
   clocking mcb @(posedge clk); //**********************************************
-  default input #0 output #1ns; //#0 to sample in OBSERVED REGION AFTER NBA (VIM)
+  default input #0; //#0 to sample in OBSERVED REGION AFTER NBA (VIM)
   input data_in, address, enable, rst_n, data_out, valid_out;
   endclocking
 
@@ -27,8 +27,8 @@ interface intf (
 
   //ASSERTION ON valid out === ~ enable
   property p_valid_out_tracks_not_enable;
-    @(posedge clk) disable iff (!rst_n)
-      $past(rst_n) |-> (valid_out == $past(~enable));
+  @(posedge clk) disable iff (!rst_n)
+    (enable |=> !valid_out) and (!enable |=> valid_out);
   endproperty
 
   assert property (p_valid_out_tracks_not_enable)

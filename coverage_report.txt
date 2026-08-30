@@ -53,16 +53,16 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           218          1          -    Covered              
-        bin zero                                          222          1          -    Covered              
-        bin one_zero                                      203          1          -    Covered              
-        bin zero_one                                      203          1          -    Covered              
+        bin one                                           219          1          -    Covered              
+        bin zero                                          221          1          -    Covered              
+        bin one_zero                                      204          1          -    Covered              
+        bin zero_one                                      204          1          -    Covered              
     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           220          1          -    Covered              
-        bin zero                                          220          1          -    Covered              
+        bin one                                           218          1          -    Covered              
+        bin zero                                          221          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
@@ -148,10 +148,10 @@ Covergroup                                             Metric       Goal       B
             bin <one_zero,max>                             19          1          -    Covered              
             bin <zero,max>                                 19          1          -    Covered              
             bin <one,max>                                  17          1          -    Covered              
-            bin <zero_one,mini>                            12          1          -    Covered              
-            bin <one_zero,mini>                            12          1          -    Covered              
-            bin <zero,mini>                                17          1          -    Covered              
-            bin <one,mini>                                 12          1          -    Covered              
+            bin <zero_one,mini>                            13          1          -    Covered              
+            bin <one_zero,mini>                            13          1          -    Covered              
+            bin <zero,mini>                                16          1          -    Covered              
+            bin <one,mini>                                 13          1          -    Covered              
 
 COVERGROUP COVERAGE:
 ----------------------------------------------------------------------------------------------------------
@@ -198,16 +198,16 @@ Covergroup                                             Metric       Goal       B
         covered/total bins:                                 4          4          -                      
         missing/total bins:                                 0          4          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           218          1          -    Covered              
-        bin zero                                          222          1          -    Covered              
-        bin one_zero                                      203          1          -    Covered              
-        bin zero_one                                      203          1          -    Covered              
+        bin one                                           219          1          -    Covered              
+        bin zero                                          221          1          -    Covered              
+        bin one_zero                                      204          1          -    Covered              
+        bin zero_one                                      204          1          -    Covered              
     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
         covered/total bins:                                 2          2          -                      
         missing/total bins:                                 0          2          -                      
         % Hit:                                        100.00%        100          -                      
-        bin one                                           220          1          -    Covered              
-        bin zero                                          220          1          -    Covered              
+        bin one                                           218          1          -    Covered              
+        bin zero                                          221          1          -    Covered              
     Coverpoint cp_address                             100.00%        100          -    Covered              
         covered/total bins:                                16         16          -                      
         missing/total bins:                                 0         16          -                      
@@ -293,10 +293,10 @@ Covergroup                                             Metric       Goal       B
             bin <one_zero,max>                             19          1          -    Covered              
             bin <zero,max>                                 19          1          -    Covered              
             bin <one,max>                                  17          1          -    Covered              
-            bin <zero_one,mini>                            12          1          -    Covered              
-            bin <one_zero,mini>                            12          1          -    Covered              
-            bin <zero,mini>                                17          1          -    Covered              
-            bin <one,mini>                                 12          1          -    Covered              
+            bin <zero_one,mini>                            13          1          -    Covered              
+            bin <one_zero,mini>                            13          1          -    Covered              
+            bin <zero,mini>                                16          1          -    Covered              
+            bin <one,mini>                                 13          1          -    Covered              
 
 TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
 

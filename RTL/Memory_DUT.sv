@@ -12,7 +12,7 @@ module mem_16x32 (
     end else if (mem_dut.enable) begin  //write
       mem[mem_dut.address] <= mem_dut.data_in;
       mem_dut.valid_out <= 1'b0;
-    end else begin  //read
+    end else if(!mem_dut.enable) begin  //read
       mem_dut.data_out <= mem[mem_dut.address];
       mem_dut.valid_out <= 1'b1;
     end

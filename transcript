@@ -2,7 +2,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 23:55:07 on Aug 22,2026
+# Start time: 02:04:15 on Aug 30,2026
 # vlog -sv "+cover" tb/package.sv tb/Interface.sv RTL/Memory_DUT.sv tb/top.sv 
 # -- Compiling package pckg
 # -- Compiling package Interface_sv_unit
@@ -15,10 +15,10 @@
 # 
 # Top level modules:
 # 	top
-# End time: 23:55:07 on Aug 22,2026, Elapsed time: 0:00:00
+# End time: 02:04:15 on Aug 30,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -c -voptargs="+acc" -coverage top 
-# Start time: 23:55:07 on Aug 22,2026
+# Start time: 02:04:16 on Aug 30,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
@@ -44,7 +44,7 @@
 # Loading work.Memory_DUT_sv_unit(fast)
 # Loading work.mem_16x32(fast)
 # [TX ID:1] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
-# [TX ID:2] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
+# [TX ID:2] EN=1 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
 # [TX ID:3] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
 # [TX ID:4] EN=0 ADDR=0x0 DIN=0x0 DOUT=0xx VALID=x
 # [TX ID:5] EN=1 ADDR=0x3 DIN=0x43d4 DOUT=0xx VALID=x
@@ -486,24 +486,19 @@
 # Driver
 # Driver
 # Monitor
-# ** Warning: [5] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
-#    Time: 5 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
+# [5] [SCB PASS] RESET PASSED Act=0xx | Act=0xx
 # Driver
 # Monitor
-# ** Warning: [15] [SCB WARN] Read from unwritten address 0x0 | Act=0x0
-#    Time: 15 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
+# [15] [SCB PASS] RESET PASSED Act=0x0 | Act=0x0
 # Driver
 # Monitor
-# ** Warning: [25] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
-#    Time: 25 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
+# [25] [SCB WRITE] Addr=0x0 <= Data=0x0
 # Driver
 # Monitor
-# ** Warning: [35] [SCB WARN] Read from unwritten address 0x0 | Act=0x0
-#    Time: 35 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
+# [35] [SCB PASS] RESET PASSED Act=0x0 | Act=0x0
 # Driver
 # Monitor
-# ** Warning: [45] [SCB WARN] Read from unwritten address 0x0 | Act=0xx
-#    Time: 45 ns  Scope: pckg.scoreboard.run File: tb/ScoreboardClass.svh Line: 118
+# [45] [SCB PASS] Addr=0x0 | Exp=0x0 | Act=0x0
 # Driver
 # Monitor
 # [55] [SCB WRITE] Addr=0x3 <= Data=0x43d4
@@ -1813,10 +1808,10 @@
 # ==================================================
 #                SCOREBOARD SUMMARY                 
 # ==================================================
-#  Passes : 435
+#  Passes : 440
 #  Errors  : 0
 # ==================================================
-# ** Note: $finish    : tb/top.sv(39)
+# ** Note: $stop    : tb/top.sv(39)
 #    Time: 4405 ns  Iteration: 2  Instance: /top
 # Break in Module top at tb/top.sv line 39
 # Stopped at tb/top.sv line 39
@@ -1875,16 +1870,16 @@
 #         covered/total bins:                                 4          4          -                      
 #         missing/total bins:                                 0          4          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           218          1          -    Covered              
-#         bin zero                                          222          1          -    Covered              
-#         bin one_zero                                      203          1          -    Covered              
-#         bin zero_one                                      203          1          -    Covered              
+#         bin one                                           219          1          -    Covered              
+#         bin zero                                          221          1          -    Covered              
+#         bin one_zero                                      204          1          -    Covered              
+#         bin zero_one                                      204          1          -    Covered              
 #     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
 #         covered/total bins:                                 2          2          -                      
 #         missing/total bins:                                 0          2          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           220          1          -    Covered              
-#         bin zero                                          220          1          -    Covered              
+#         bin one                                           218          1          -    Covered              
+#         bin zero                                          221          1          -    Covered              
 #     Coverpoint cp_address                             100.00%        100          -    Covered              
 #         covered/total bins:                                16         16          -                      
 #         missing/total bins:                                 0         16          -                      
@@ -1970,10 +1965,10 @@
 #             bin <one_zero,max>                             19          1          -    Covered              
 #             bin <zero,max>                                 19          1          -    Covered              
 #             bin <one,max>                                  17          1          -    Covered              
-#             bin <zero_one,mini>                            12          1          -    Covered              
-#             bin <one_zero,mini>                            12          1          -    Covered              
-#             bin <zero,mini>                                17          1          -    Covered              
-#             bin <one,mini>                                 12          1          -    Covered              
+#             bin <zero_one,mini>                            13          1          -    Covered              
+#             bin <one_zero,mini>                            13          1          -    Covered              
+#             bin <zero,mini>                                16          1          -    Covered              
+#             bin <one,mini>                                 13          1          -    Covered              
 # 
 # COVERGROUP COVERAGE:
 # ----------------------------------------------------------------------------------------------------------
@@ -2020,16 +2015,16 @@
 #         covered/total bins:                                 4          4          -                      
 #         missing/total bins:                                 0          4          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           218          1          -    Covered              
-#         bin zero                                          222          1          -    Covered              
-#         bin one_zero                                      203          1          -    Covered              
-#         bin zero_one                                      203          1          -    Covered              
+#         bin one                                           219          1          -    Covered              
+#         bin zero                                          221          1          -    Covered              
+#         bin one_zero                                      204          1          -    Covered              
+#         bin zero_one                                      204          1          -    Covered              
 #     Coverpoint cp_valid_out                           100.00%        100          -    Covered              
 #         covered/total bins:                                 2          2          -                      
 #         missing/total bins:                                 0          2          -                      
 #         % Hit:                                        100.00%        100          -                      
-#         bin one                                           220          1          -    Covered              
-#         bin zero                                          220          1          -    Covered              
+#         bin one                                           218          1          -    Covered              
+#         bin zero                                          221          1          -    Covered              
 #     Coverpoint cp_address                             100.00%        100          -    Covered              
 #         covered/total bins:                                16         16          -                      
 #         missing/total bins:                                 0         16          -                      
@@ -2115,15 +2110,15 @@
 #             bin <one_zero,max>                             19          1          -    Covered              
 #             bin <zero,max>                                 19          1          -    Covered              
 #             bin <one,max>                                  17          1          -    Covered              
-#             bin <zero_one,mini>                            12          1          -    Covered              
-#             bin <one_zero,mini>                            12          1          -    Covered              
-#             bin <zero,mini>                                17          1          -    Covered              
-#             bin <one,mini>                                 12          1          -    Covered              
+#             bin <zero_one,mini>                            13          1          -    Covered              
+#             bin <one_zero,mini>                            13          1          -    Covered              
+#             bin <zero,mini>                                16          1          -    Covered              
+#             bin <one,mini>                                 13          1          -    Covered              
 # 
 # TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
 # 
 # Total Coverage By Instance (filtered view): 100.00%
 # 
 # 
-# End time: 23:55:19 on Aug 22,2026, Elapsed time: 0:00:12
-# Errors: 0, Warnings: 5
+# End time: 02:04:29 on Aug 30,2026, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0

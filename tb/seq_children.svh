@@ -29,7 +29,7 @@ class reset_seq extends base_sequence;
 
     // Deassert Reset
     tx = new();
-    if (!tx.randomize() with { rst_n == 1'b1; enable == 1'b0; address == '0; data_in == '0; }) begin
+    if (!tx.randomize() with { rst_n == 1'b1; enable == 1'b1; address == '0; data_in == '0; }) begin
       $fatal(1, "[Reset Seq] Deassert randomization failed!");
     end
     tx.print();
